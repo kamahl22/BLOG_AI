@@ -1,0 +1,13 @@
+discord_bot/
+├── bot.py               # Main bot entry point
+├── config.py            # Loads token, config, etc.
+├── .env                 # Contains DISCORD_TOKEN
+├── requirements.txt     # Python dependencies
+├── cogs/                # Modular bot commands
+│   ├── __init__.py
+│   ├── base.py          # Simple !ping or hello commands
+│   └── odds.py          # Betting-related commands
+├── utils/               # Utility functions for DB, blockchain, etc.
+│   └── algorand.py
+│   └── db.py
+└── README.md            # Local dev instructions
