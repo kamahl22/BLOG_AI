@@ -1,4 +1,5 @@
 requests==2.32.3
 beautifulsoup4==4.12.3
 pandas==2.2.3
-sqlite3
+supabase==2.10.0
+python-dotenv==1.0.1

@@ -1,0 +1,6 @@
+1.	fetch_odds.py – pulls sports odds data from an API
+2.	fetch_news.py – grabs sports-related news articles
+3.	fetch_supabase.py – retrieves historical data from Supabase
+4.	merge_data.py – combines the three data sources
+5.	summarize.py – summarizes the merged data using OpenAI
+6.	config.py – loads environment variables from .env

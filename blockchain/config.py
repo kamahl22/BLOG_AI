@@ -1,8 +1,4 @@
-import os
-from dotenv import load_dotenv
+ALGOD_ADDRESS = "https://testnet-api.algonode.cloud"
+ALGOD_TOKEN = ""  # Not required for Algonode
 
-load_dotenv()
-
-ALGORAND_NODE = os.getenv("ALGORAND_NODE", "https://testnet-api.algonode.cloud")
-ALGORAND_TOKEN = os.getenv("ALGORAND_TOKEN", "")
-ALGORAND_INDEXER = os.getenv("ALGORAND_INDEXER", "https://testnet-idx.algonode.cloud")
+ASA_ID = 737897145  # TBLOG TestNet ASA

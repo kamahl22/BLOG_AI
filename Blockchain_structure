@@ -1,0 +1,13 @@
+BLOG/
+└── blockchain/
+    ├── __init__.py
+    ├── config.py                 # Handles Algod/Indexer client setup
+    ├── create_wallet.py         # Generate a new wallet and mnemonic
+    ├── check_balance.py         # Check wallet balance for TBLOG and Algos
+    ├── send_token.py            # Transfer TBLOG token from one account to another
+    ├── smart_contracts/
+    │   ├── __init__.py
+    │   ├── compile_contract.py  # Compile TEAL (smart contract) into bytes
+    │   ├── deploy_contract.py   # Deploy the compiled contract
+    │   └── interaction.py       # Call a contract method (e.g., place bet)
+    └── utils.py                 # Helper functions (e.g., for encoding, formatting)

@@ -1,0 +1,14 @@
+Script
+    Purpose
+fetch_odds.py
+    Connects to an external API and grabs upcoming sports betting odds.
+fetch_news.py
+    Fetches the latest sports-related news articles.
+fetch_supabase.py
+    Pulls historical game/match data from your Supabase database.
+merge_data.py
+    Merges the three datasets into one object.
+summarize.py
+    Sends the merged data to OpenAI and gets a summarized version for Discord users.
+config.py
+    Loads API keys and settings from your .env file for secure access.
