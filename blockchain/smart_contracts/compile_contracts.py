@@ -1,5 +1,5 @@
 from algosdk import encoding
-from .client import get_algod_client
+from blockchain.client import get_algod_client
 
 def compile_teal(source_code):
     client = get_algod_client()

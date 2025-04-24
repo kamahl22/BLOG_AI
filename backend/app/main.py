@@ -4,4 +4,4 @@ app = FastAPI()
 
 @app.get('/')
 async def root():
-    return {'message': 'BLOG API'}
+    return {'message': 'BLOG_AI API'}

@@ -1,4 +1,4 @@
-# BLOG: AI-Powered Sports Betting Platform
+# BLOG_AI: AI-Powered Sports Betting Platform
 
 A decentralized sports betting platform with AI-driven predictions, Chrome extension, mobile app, website, and Discord bot. Uses TBLOG token on Algorand TestNet.
 
@@ -14,5 +14,6 @@ A decentralized sports betting platform with AI-driven predictions, Chrome exten
 - `data_pipeline/`: Sports data and ML predictions
 - `frontend/`: React/Vite website
 - `mobile/`: React Native mobile app
+- `blockchain/`: Algorand blockchain integration
 - `tests/`: Unit and integration tests
 - `docs/`: Documentation

@@ -1,14 +1,16 @@
 #!/bin/bash
-# setup.sh: Initialize the BLOG project structure
+# setup.sh: Initialize the BLOG_AI project structure
 
 # Create project root and directories
-mkdir -p ~/BLOG/{.github/workflows,chrome_extension,discord_bot/{cogs,utils},backend/app/{api,services},smart_contracts/tests,data_pipeline/{fetch,preprocess,model_training,storage/{raw,processed,predictions}},frontend/src/components,mobile/src,tests,docs}
+mkdir -p ~/BLOG_AI/{.github/workflows,chrome_extension,discord_bot/{cogs,utils},backend/app/{api,services},smart_contracts/tests,data_pipeline/{fetch,preprocess,model_training,storage/{raw,processed,predictions}},frontend/src/components,mobile/src,tests,docs,blockchain/{smart_contracts,scripts}}
 
 # Navigate to project root
-cd ~/BLOG
+cd ~/BLOG_AI
 
 # Initialize Git repository
-git init
+if [ ! -d .git ]; then
+    git init
+fi
 
 # Create root-level files
 touch .gitignore .env README.md setup.sh requirements.txt
@@ -32,6 +34,7 @@ jobs:
           pip install -r discord_bot/requirements.txt
           pip install -r backend/requirements.txt
           pip install -r data_pipeline/requirements.txt
+          pip install -r blockchain/requirements.txt
       - name: Run tests
         run: pytest tests/
 EOF
@@ -41,7 +44,7 @@ touch chrome_extension/{manifest.json,popup.html,popup.js,content.js,requirement
 cat << 'EOF' > chrome_extension/manifest.json
 {
   "manifest_version": 3,
-  "name": "BLOG Betting Assistant",
+  "name": "BLOG_AI Betting Assistant",
   "version": "1.0",
   "permissions": ["activeTab"],
   "action": {
@@ -59,38 +62,56 @@ cat << 'EOF' > chrome_extension/popup.html
 <!DOCTYPE html>
 <html>
 <body>
-  <h1>BLOG Betting Assistant</h1>
+  <h1>BLOG_AI Betting Assistant</h1>
   <p>Loading odds...</p>
   <script src="popup.js"></script>
 </body>
 </html>
 EOF
 cat << 'EOF' > chrome_extension/popup.js
-console.log('BLOG extension loaded');
+console.log('BLOG_AI extension loaded');
 EOF
 cat << 'EOF' > chrome_extension/content.js
-console.log('BLOG content script loaded');
+console.log('BLOG_AI content script loaded');
 EOF
 touch chrome_extension/requirements.txt
 
 # Create discord_bot/ files
-touch discord_bot/{bot.py,.env,requirements.txt} discord_bot/cogs/{__init__.py,hello.py,algo_wallet.py} discord_bot/utils/logger.py
+touch discord_bot/{bot.py,.env,requirements.txt,.gitignore} discord_bot/cogs/{__init__.py,hello.py,algo_wallet.py} discord_bot/utils/logger.py
 cat << 'EOF' > discord_bot/bot.py
 import discord
 from discord.ext import commands
 import os
 from dotenv import load_dotenv
+from utils.logger import setup_logger
 
 load_dotenv()
 TOKEN = os.getenv('DISCORD_TOKEN')
-bot = commands.Bot(command_prefix='!')
+
+logger = setup_logger()
+intents = discord.Intents.default()
+intents.message_content = True
+bot = commands.Bot(command_prefix='!', intents=intents)
 
 @bot.event
 async def on_ready():
-    print(f'{bot.user} has connected to Discord!')
+    logger.info(f'{bot.user} has connected to Discord!')
 
-bot.load_extension('cogs.hello')
-bot.run(TOKEN)
+async def load_cogs():
+    try:
+        await bot.load_extension('cogs.hello')
+        await bot.load_extension('cogs.algo_wallet')
+        logger.info("Cogs loaded successfully")
+    except Exception as e:
+        logger.error(f"Failed to load cogs: {e}")
+
+async def main():
+    await load_cogs()
+    await bot.start(TOKEN)
+
+if __name__ == "__main__":
+    import asyncio
+    asyncio.run(main())
 EOF
 cat << 'EOF' > discord_bot/cogs/hello.py
 from discord.ext import commands
@@ -124,11 +145,24 @@ cat << 'EOF' > discord_bot/utils/logger.py
 import logging
 
 def setup_logger():
-    logging.basicConfig(level=logging.INFO)
-    return logging.getLogger('BLOG')
+    logger = logging.getLogger('BLOG_AI')
+    logger.setLevel(logging.INFO)
+    console_handler = logging.StreamHandler()
+    console_handler.setFormatter(logging.Formatter('%(asctime)s %(levelname)s %(name)s %(message)s'))
+    logger.addHandler(console_handler)
+    file_handler = logging.FileHandler('discord_bot/bot.log')
+    file_handler.setFormatter(logging.Formatter('%(asctime)s %(levelname)s %(name)s %(message)s'))
+    logger.addHandler(file_handler)
+    return logger
 EOF
 cat << 'EOF' > discord_bot/.env
 DISCORD_TOKEN=your_discord_bot_token
+EOF
+cat << 'EOF' > discord_bot/.gitignore
+.env
+__pycache__/
+*.pyc
+bot.log
 EOF
 cat << 'EOF' > discord_bot/requirements.txt
 discord.py==2.3.2
@@ -144,7 +178,7 @@ app = FastAPI()
 
 @app.get('/')
 async def root():
-    return {'message': 'BLOG API'}
+    return {'message': 'BLOG_AI API'}
 EOF
 cat << 'EOF' > backend/app/config.py
 from dotenv import load_dotenv
@@ -192,6 +226,7 @@ uvicorn==0.30.6
 python-dotenv==1.0.1
 pandas==2.2.3
 scikit-learn==1.5.2
+algosdk==2.7.0
 EOF
 
 # Create smart_contracts/ files
@@ -256,8 +291,8 @@ import React from 'react';
 function App() {
   return (
     <div>
-      <h1>BLOG: Sports Betting Platform</h1>
-      <p>Welcome to BLOG!</p>
+      <h1>BLOG_AI: Sports Betting Platform</h1>
+      <p>Welcome to BLOG_AI!</p>
     </div>
   );
 }
@@ -282,7 +317,7 @@ export default defineConfig({
 EOF
 cat << 'EOF' > frontend/package.json
 {
-  "name": "blog-frontend",
+  "name": "blog-ai-frontend",
   "version": "1.0.0",
   "scripts": {
     "dev": "vite",
@@ -300,9 +335,9 @@ cat << 'EOF' > frontend/package.json
 }
 EOF
 cat << 'EOF' > frontend/README.md
-# BLOG Frontend
+# BLOG_AI Frontend
 
-React/Vite frontend for the BLOG platform.
+React/Vite frontend for the BLOG_AI platform.
 
 ## Setup
 1. Run `npm install`
@@ -318,14 +353,14 @@ import { View, Text } from 'react-native';
 export default function App() {
   return (
     <View>
-      <Text>BLOG Mobile App</Text>
+      <Text>BLOG_AI Mobile App</Text>
     </View>
   );
 }
 EOF
 cat << 'EOF' > mobile/package.json
 {
-  "name": "blog-mobile",
+  "name": "blog-ai-mobile",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -344,13 +379,185 @@ cat << 'EOF' > mobile/package.json
 }
 EOF
 cat << 'EOF' > mobile/README.md
-# BLOG Mobile
+# BLOG_AI Mobile
 
-React Native mobile app for the BLOG platform.
+React Native mobile app for the BLOG_AI platform.
 
 ## Setup
 1. Run `npm install`
 2. Run `npm start`
+EOF
+
+# Create blockchain/ files
+touch blockchain/{__init__.py,config.py,client.py,wallet.py,transactions.py,asa_utils.py,.env,.gitignore,requirements.txt}
+touch blockchain/smart_contracts/{__init__.py,approval.teal,clear.teal,compile_contracts.py}
+touch blockchain/scripts/{create_wallet.py,fund_wallet.py,send_token.py,deploy_smart_contract.py}
+cat << 'EOF' > blockchain/__init__.py
+EOF
+cat << 'EOF' > blockchain/config.py
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+ALGORAND_NODE = os.getenv("ALGORAND_NODE", "https://testnet-api.algonode.cloud")
+ALGORAND_TOKEN = os.getenv("ALGORAND_TOKEN", "")
+ALGORAND_INDEXER = os.getenv("ALGORAND_INDEXER", "https://testnet-idx.algonode.cloud")
+EOF
+cat << 'EOF' > blockchain/client.py
+from algosdk.v2client import algod, indexer
+from .config import ALGORAND_NODE, ALGORAND_TOKEN, ALGORAND_INDEXER
+
+def get_algod_client():
+    headers = {"X-API-Key": ALGORAND_TOKEN} if ALGORAND_TOKEN else {}
+    return algod.AlgodClient(ALGORAND_TOKEN, ALGORAND_NODE, headers)
+
+def get_indexer_client():
+    headers = {"X-API-Key": ALGORAND_TOKEN} if ALGORAND_TOKEN else {}
+    return indexer.IndexerClient("", ALGORAND_INDEXER, headers)
+EOF
+cat << 'EOF' > blockchain/wallet.py
+from algosdk import account, mnemonic
+
+def create_wallet():
+    private_key, address = account.generate_account()
+    mnemonic_phrase = mnemonic.from_private_key(private_key)
+    return {"address": address, "private_key": private_key, "mnemonic": mnemonic_phrase}
+
+def recover_wallet(mnemonic_phrase):
+    private_key = mnemonic.to_private_key(mnemonic_phrase)
+    address = account.address_from_private_key(private_key)
+    return {"address": address, "private_key": private_key}
+EOF
+cat << 'EOF' > blockchain/transactions.py
+from algosdk import transaction
+from .client import get_algod_client
+
+def send_algo(sender, receiver, amount, private_key, note=""):
+    client = get_algod_client()
+    params = client.suggested_params()
+    txn = transaction.PaymentTxn(sender, params, receiver, amount, note=note.encode())
+    signed_txn = txn.sign(private_key)
+    txid = client.send_transaction(signed_txn)
+    return txid
+EOF
+cat << 'EOF' > blockchain/asa_utils.py
+from algosdk import transaction
+from .client import get_algod_client
+
+def create_asa(creator, total, decimals, asset_name, unit_name, private_key):
+    client = get_algod_client()
+    params = client.suggested_params()
+    txn = transaction.AssetConfigTxn(
+        sender=creator,
+        sp=params,
+        total=total,
+        decimals=decimals,
+        asset_name=asset_name,
+        unit_name=unit_name,
+        manager=creator,
+        reserve=creator,
+        freeze=creator,
+        clawback=creator
+    )
+    signed_txn = txn.sign(private_key)
+    txid = client.send_transaction(signed_txn)
+    return txid
+EOF
+cat << 'EOF' > blockchain/.env
+ALGORAND_NODE=https://testnet-api.algonode.cloud
+ALGORAND_INDEXER=https://testnet-idx.algonode.cloud
+ALGORAND_TOKEN=
+EOF
+cat << 'EOF' > blockchain/.gitignore
+.env
+__pycache__/
+*.pyc
+EOF
+cat << 'EOF' > blockchain/requirements.txt
+algosdk==2.7.0
+python-dotenv==1.0.1
+EOF
+cat << 'EOF' > blockchain/smart_contracts/__init__.py
+EOF
+cat << 'EOF' > blockchain/smart_contracts/approval.teal
+#pragma version 6
+int 1
+return
+EOF
+cat << 'EOF' > blockchain/smart_contracts/clear.teal
+#pragma version 6
+int 1
+return
+EOF
+cat << 'EOF' > blockchain/smart_contracts/compile_contracts.py
+from algosdk import encoding
+from blockchain.client import get_algod_client
+
+def compile_teal(source_code):
+    client = get_algod_client()
+    compiled = client.compile(source_code)
+    return encoding.decode_address(compiled["result"])
+EOF
+cat << 'EOF' > blockchain/scripts/create_wallet.py
+from blockchain.wallet import create_wallet
+
+if __name__ == "__main__":
+    wallet = create_wallet()
+    print(f"Address: {wallet['address']}")
+    print(f"Mnemonic: {wallet['mnemonic']}")
+    print("Store the mnemonic securely!")
+EOF
+cat << 'EOF' > blockchain/scripts/fund_wallet.py
+from blockchain.transactions import send_algo
+
+if __name__ == "__main__":
+    sender = input("Enter sender address: ")
+    receiver = input("Enter receiver address: ")
+    amount = int(input("Enter amount in microAlgos: "))
+    private_key = input("Enter sender private key: ")
+    txid = send_algo(sender, receiver, amount, private_key)
+    print(f"Transaction ID: {txid}")
+EOF
+cat << 'EOF' > blockchain/scripts/send_token.py
+from algosdk import transaction
+from blockchain.client import get_algod_client
+
+if __name__ == "__main__":
+    sender = input("Enter sender address: ")
+    receiver = input("Enter receiver address: ")
+    asset_id = int(input("Enter TBLOG asset ID: "))
+    amount = int(input("Enter amount: "))
+    private_key = input("Enter sender private key: ")
+    client = get_algod_client()
+    params = client.suggested_params()
+    txn = transaction.AssetTransferTxn(sender, params, receiver, amount, asset_id)
+    signed_txn = txn.sign(private_key)
+    txid = client.send_transaction(signed_txn)
+    print(f"Transaction ID: {txid}")
+EOF
+cat << 'EOF' > blockchain/scripts/deploy_smart_contract.py
+from algosdk import transaction
+from blockchain.client import get_algod_client
+
+def deploy_contract(approval_program, clear_program, creator, private_key):
+    client = get_algod_client()
+    params = client.suggested_params()
+    app_create_txn = transaction.ApplicationCreateTxn(
+        sender=creator,
+        sp=params,
+        on_complete=transaction.OnComplete.NoOpOC,
+        approval_program=approval_program,
+        clear_program=clear_program,
+        global_schema=transaction.StateSchema(num_uints=1, num_byte_slices=1),
+        local_schema=transaction.StateSchema(num_uints=0, num_byte_slices=0)
+    )
+    signed_txn = app_create_txn.sign(private_key)
+    txid = client.send_transaction(signed_txn)
+    return txid
+
+if __name__ == "__main__":
+    print("Deploy smart contract: TBD")
 EOF
 
 # Create tests/ files
@@ -389,7 +596,38 @@ cat << 'EOF' > docs/setup.md
 # Setup Guide
 
 1. Run `./setup.sh` to initialize the project.
-2.میت
+2. See individual component READMEs for setup instructions.
+EOF
+cat << 'EOF' > docs/api.md
+# API Documentation
+
+Placeholder for FastAPI endpoints.
+EOF
+cat << 'EOF' > docs/data_pipeline.md
+# Data Pipeline Documentation
+
+Placeholder for data fetching and processing.
+EOF
+cat << 'EOF' > docs/extension.md
+# Chrome Extension Documentation
+
+Placeholder for extension setup and usage.
+EOF
+cat << 'EOF' > docs/business_plan.md
+# Business Plan
+
+Placeholder for BLOG_AI business strategy.
+EOF
+cat << 'EOF' > docs/business_model.md
+# Business Model
+
+Placeholder for BLOG_AI revenue model.
+EOF
+cat << 'EOF' > docs/compliance.md
+# Compliance
+
+Placeholder for legal and regulatory compliance.
+EOF
 
 # Create root-level files
 cat << 'EOF' > .gitignore
@@ -401,14 +639,16 @@ __pycache__/
 frontend/dist/
 mobile/android/
 mobile/ios/
+discord_bot/.env
+backend/.env
+blockchain/.env
 EOF
 cat << 'EOF' > .env
-# Root-level environment variables
 DISCORD_TOKEN=your_discord_bot_token
 ALGORAND_API_KEY=your_algorand_api_key
 EOF
 cat << 'EOF' > README.md
-# BLOG: AI-Powered Sports Betting Platform
+# BLOG_AI: AI-Powered Sports Betting Platform
 
 A decentralized sports betting platform with AI-driven predictions, Chrome extension, mobile app, website, and Discord bot. Uses TBLOG token on Algorand TestNet.
 
@@ -424,6 +664,7 @@ A decentralized sports betting platform with AI-driven predictions, Chrome exten
 - `data_pipeline/`: Sports data and ML predictions
 - `frontend/`: React/Vite website
 - `mobile/`: React Native mobile app
+- `blockchain/`: Algorand blockchain integration
 - `tests/`: Unit and integration tests
 - `docs/`: Documentation
 EOF
@@ -434,71 +675,13 @@ EOF
 
 # Git operations
 git add .
-git commit -m "Initial commit: Full project structure setup"
-# Uncomment to push to GitHub after verifying
-# git remote add origin https://github.com/kamahl22/BLOG.git
+git commit -m "Initial commit: Full BLOG_AI project structure with blockchain"
+# Set up remote (uncomment after creating https://github.com/kamahl22/BLOG_AI)
+# git remote add origin https://github.com/kamahl22/BLOG_AI.git
 # git push -u origin main
 
-echo "BLOG project structure created in ~/BLOG"
+echo "BLOG_AI project structure created in ~/BLOG_AI"
+echo "To push to GitHub, create https://github.com/kamahl22/BLOG_AI, then run:"
+echo "  git remote add origin https://github.com/kamahl22/BLOG_AI.git"
+echo "  git push -u origin main"
 EOF
-
----
-
-### Instructions to Use
-1. **Save the Script**:
-   - Copy the script content into a file named `setup.sh` in your home directory or desired location (e.g., `~/setup.sh`).
-   - Alternatively, if you’re in a temporary directory, move it to `~/BLOG/setup.sh` after creation.
-
-2. **Make Executable**:
-   ```bash
-   chmod +x ~/BLOG/setup.sh
-   ```
-
-3. **Run the Script**:
-   ```bash
-   ./setup.sh
-   ```
-   This will:
-   - Create the `~/BLOG` directory and all subdirectories/files.
-   - Initialize a Git repository.
-   - Commit the initial structure.
-   - Output: `BLOG project structure created in ~/BLOG`.
-
-4. **Verify the Structure**:
-   ```bash
-   cd ~/BLOG
-   tree -a
-   ```
-   Check that all directories and files match the recommended structure.
-
-5. **Set Up GitHub** (Manual Step):
-   - Create a repository at `https://github.com/kamahl22/BLOG` if it doesn’t exist.
-   - Uncomment the Git push commands in `setup.sh` or run manually:
-     ```bash
-     git remote add origin https://github.com/kamahl22/BLOG.git
-     git push -u origin main
-     ```
-
-6. **Next Steps**:
-   - **Discord Bot**: Update `discord_bot/.env` with your bot token and run `python discord_bot/bot.py`.
-   - **Backend**: Install dependencies (`pip install -r backend/requirements.txt`) and start the server (`uvicorn backend.app.main:app --reload`).
-   - **Frontend**: Run `cd frontend && npm install && npm run dev` to start the React app.
-   - **Mobile**: Run `cd mobile && npm install && npm start` for the React Native app.
-   - **Tests**: Run `pytest tests/` after installing root dependencies (`pip install -r requirements.txt`).
-
----
-
-### Notes
-- **Fresh Start**: The script assumes a clean slate, creating `~/BLOG` from scratch. If `~/BLOG` already exists, delete it (`rm -rf ~/BLOG`) or modify the script to use a different path.
-- **Placeholders**: Files like `fetch_espn.py`, `predict_model.py`, and `approval.teal` contain minimal placeholders to establish the structure. They’ll need implementation based on your requirements (e.g., odds parsing, ML models).
-- **Diagram Model**: The `docs/architecture.mmd` includes a basic Mermaid diagram. If you upload your new diagram model, I can update it to reflect the exact data flow.
-- **Dependencies**: Each component’s `requirements.txt` or `package.json` includes minimal dependencies. Add more as needed (e.g., `pybaseball` for `data_pipeline/`).
-- **Security**: Update `.env` files with real tokens/keys and never commit them to Git.
-
-Let me know if you want to:
-- Implement specific files (e.g., `fetch_espn.py`, `popup.js`).
-- Focus on a component (e.g., Chrome extension, Discord bot).
-- Incorporate the new diagram model (please upload or describe it).
-- Run initial tests or set up the Discord server.
-
-This script sets up the full structure, ready for development!

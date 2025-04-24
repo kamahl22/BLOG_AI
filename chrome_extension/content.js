@@ -1,1 +1,1 @@
-console.log('BLOG content script loaded');
+console.log('BLOG_AI content script loaded');

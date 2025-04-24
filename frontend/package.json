@@ -1,5 +1,5 @@
 {
-  "name": "blog-frontend",
+  "name": "blog-ai-frontend",
   "version": "1.0.0",
   "scripts": {
     "dev": "vite",

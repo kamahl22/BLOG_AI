@@ -1,1 +1,1 @@
-console.log('BLOG extension loaded');
+console.log('BLOG_AI extension loaded');

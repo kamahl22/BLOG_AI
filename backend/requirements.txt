@@ -3,3 +3,4 @@ uvicorn==0.30.6
 python-dotenv==1.0.1
 pandas==2.2.3
 scikit-learn==1.5.2
+algosdk==2.7.0

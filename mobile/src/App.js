@@ -4,7 +4,7 @@ import { View, Text } from 'react-native';
 export default function App() {
   return (
     <View>
-      <Text>BLOG Mobile App</Text>
+      <Text>BLOG_AI Mobile App</Text>
     </View>
   );
 }

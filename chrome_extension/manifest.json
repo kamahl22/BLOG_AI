@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "BLOG Betting Assistant",
+  "name": "BLOG_AI Betting Assistant",
   "version": "1.0",
   "permissions": ["activeTab"],
   "action": {
