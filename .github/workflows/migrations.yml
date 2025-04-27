@@ -1,35 +1,43 @@
 name: Run Supabase Migrations
 
-on:
-  push:
-    branches:
-      - main
-      - master  # If your default branch is master instead of main
+     on:
+       push:
+         branches:
+           - main
 
-jobs:
-  migrations:
-    runs-on: ubuntu-latest
+     jobs:
+       run-migrations:
+         runs-on: ubuntu-latest
 
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
+         steps:
+         - name: Checkout code
+           uses: actions/checkout@v3
 
-      - name: Set up Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.11'  # Use same Python version as your local project
+         - name: Set up Python
+           uses: actions/setup-python@v4
+           with:
+             python-version: '3.10'
 
-      - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install psycopg2-binary python-dotenv
+         - name: Install dependencies
+           run: |
+             python -m pip install --upgrade pip
+             pip install -r data_pipeline/requirements.txt
 
-      - name: Run migrations
-        env:
-          SUPABASE_DB_HOST: ${{ secrets.SUPABASE_DB_HOST }}
-          SUPABASE_DB_PORT: ${{ secrets.SUPABASE_DB_PORT }}
-          SUPABASE_DB_NAME: ${{ secrets.SUPABASE_DB_NAME }}
-          SUPABASE_DB_USER: ${{ secrets.SUPABASE_DB_USER }}
-          SUPABASE_DB_PASSWORD: ${{ secrets.SUPABASE_DB_PASSWORD }}
-        run: |
-          python run_migrations.py
+         - name: Run migrations
+           env:
+             SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+             SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+             SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+             SUPABASE_DB_HOST: ${{ secrets.SUPABASE_DB_HOST }}
+             SUPABASE_DB_PORT: ${{ secrets.SUPABASE_DB_PORT }}
+             SUPABASE_DB_NAME: ${{ secrets.SUPABASE_DB_NAME }}
+             SUPABASE_DB_USER: ${{ secrets.SUPABASE_DB_USER }}
+             SUPABASE_DB_PASSWORD: ${{ secrets.UPABASE_DB_PASSWORD }}
+          
+           run: |
+             python -c "from data_pipeline.fetch.fetch_supabase import execute_sql_file; \
+             execute_sql_file('sql/migrations/002_create_migration_history_table.sql'); \
+             execute_sql_file('sql/migrations/003_create_team_stats_table.sql'); \
+             execute_sql_file('sql/migrations/004_create_player_stats_table.sql'); \
+             execute_sql_file('sql/migrations/005_create_player_splits_table.sql'); \
+             execute_sql_file('sql/migrations/006_fix_odds_data_table.sql')"
