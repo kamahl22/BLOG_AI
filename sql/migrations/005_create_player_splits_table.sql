@@ -1,27 +1,28 @@
 -- Creates the player_splits table for player-level splits (e.g., vs. Left, Home)
-CREATE TABLE IF NOT EXISTS player_splits (
+CREATE TABLE player_splits (
     id SERIAL PRIMARY KEY,
-    sport VARCHAR(50) NOT NULL, -- e.g., 'MLB'
-    player_name VARCHAR(100) NOT NULL, -- e.g., 'Kyle Tucker'
-    team_name VARCHAR(100), -- e.g., 'Chicago Cubs'
-    split_type VARCHAR(50) NOT NULL, -- e.g., 'vs_left', 'home', 'count_0_0'
-    split_value VARCHAR(50) NOT NULL, -- e.g., 'vs. Left', 'Home', 'Count 0-0'
-    at_bats INTEGER, -- AB
-    runs INTEGER, -- R
-    hits INTEGER, -- H
-    doubles INTEGER, -- 2B
-    triples INTEGER, -- 3B
-    home_runs INTEGER, -- HR
-    rbi INTEGER, -- RBI
-    walks INTEGER, -- BB
-    strikeouts INTEGER, -- SO
-    stolen_bases INTEGER, -- SB
-    caught_stealing INTEGER, -- CS
-    batting_avg DECIMAL(5,3), -- BA
-    on_base_pct DECIMAL(5,3), -- OBP
-    slugging_pct DECIMAL(5,3), -- SLG
-    ops DECIMAL(5,3), -- OPS
-    source VARCHAR(50), -- e.g., 'ESPN'
-    stat_date DATE NOT NULL, -- Date of stats
+    sport VARCHAR(50),
+    player_name VARCHAR(100),
+    team_name VARCHAR(100),
+    split_type VARCHAR(50),
+    split_value VARCHAR(100),
+    season INTEGER, -- Added for yearly context
+    at_bats INTEGER,
+    runs INTEGER,
+    hits INTEGER,
+    doubles INTEGER,
+    triples INTEGER,
+    home_runs INTEGER,
+    rbi INTEGER,
+    walks INTEGER,
+    strikeouts INTEGER,
+    stolen_bases INTEGER,
+    caught_stealing INTEGER,
+    batting_avg FLOAT,
+    on_base_pct FLOAT,
+    slugging_pct FLOAT,
+    ops FLOAT,
+    source VARCHAR(50),
+    stat_date DATE,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );

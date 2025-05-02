@@ -2,102 +2,47 @@ import sys
 import os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../..')))
 import requests
+from datetime import datetime
+from fetch_supabase import insert_odds_data
 from dotenv import load_dotenv
-from data_pipeline.fetch.fetch_supabase import insert_odds_data
 import logging
 
-# Set up logging
-logging.basicConfig(level=logging.INFO, filename='data_pipeline/pipeline.log')
+logging.basicConfig(level=logging.INFO, filename='data_pipeline/pipeline.log', format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
-# Load environment variables
 load_dotenv()
 ODDS_API_KEY = os.getenv('ODDS_API_KEY')
-BASE_URL = 'https://api.the-odds-api.com/v4/sports'
 
-# Supported sports with their Odds API keys
-SPORTS = {
-    'NFL': 'americanfootball_nfl',
-    'NBA': 'basketball_nba',
-    'MLB': 'baseball_mlb',
-    'NCAAF': 'americanfootball_ncaaf',
-    'NCAAMB': 'basketball_ncaam',
-    'NCAAWB': 'basketball_ncaaw',
-    'NHL': 'icehockey_nhl',
-    'SOCCER': 'soccer_epl'
-}
-
-def fetch_odds(sport_key=None):
-    """
-    Fetches odds from The Odds API for all sports or a specific sport.
-    Args:
-        sport_key (str, optional): The Odds API sport key (e.g., 'americanfootball_nfl').
-                                   If None, fetches for all SPORTS.
-    Returns:
-        list: Aggregated odds data for the specified sport(s).
-    """
-    odds_data = []
-    sports_to_fetch = [sport_key] if sport_key else SPORTS.values()
-
-    for sport in sports_to_fetch:
-        try:
-            url = f"{BASE_URL}/{sport}/odds"
-            params = {'apiKey': ODDS_API_KEY, 'regions': 'us', 'markets': 'h2h'}
-            response = requests.get(url, params=params)
-            response.raise_for_status()
-            data = response.json()
-
-            if not data:
-                logger.warning(f"No games found for {sport}")
-                continue
-
-            # Process and format data for Supabase
-            for game in data:
-                # Check if required fields exist
-                bookmakers = game.get('bookmakers', [])
-                if not bookmakers:
-                    logger.warning(f"No bookmakers for game {game.get('id')} in {sport}")
-                    continue
-
-                markets = bookmakers[0].get('markets', [])
-                if not markets:
-                    logger.warning(f"No markets for game {game.get('id')} in {sport}")
-                    continue
-
-                outcomes = markets[0].get('outcomes', [])
-                if not outcomes:
-                    logger.warning(f"No outcomes for game {game.get('id')} in {sport}")
-                    continue
-
-                # Extract odds (use first outcome; adjust if needed for both teams)
-                formatted_game = {
-                    'sport': next((k for k, v in SPORTS.items() if v == sport), sport),
-                    'home_team': game.get('home_team'),
-                    'away_team': game.get('away_team'),
-                    'moneyline_odds': outcomes[0].get('price'),
-                    'game_date': game.get('commence_time')
+def fetch_odds_data():
+    url = f"https://api.the-odds-api.com/v4/sports/baseball_mlb/odds/?apiKey={ODDS_API_KEY}&regions=us&markets=h2h"
+    try:
+        response = requests.get(url)
+        response.raise_for_status()
+        games = response.json()
+        
+        for game in games:
+            home_team = game['home_team']
+            away_team = game['away_team']
+            odds = game.get('bookmakers', [])[0].get('markets', [])[0].get('outcomes', [])
+            home_odds = next((o['price'] for o in odds if o['name'] == home_team), None)
+            away_odds = next((o['price'] for o in odds if o['name'] == away_team), None)
+            
+            if home_odds and away_odds:
+                data = {
+                    'sport': 'MLB',
+                    'home_team': home_team,
+                    'away_team': away_team,
+                    'home_odds': int(home_odds),
+                    'away_odds': int(away_odds),
+                    'game_date': datetime.now().strftime('%Y-%m-%d')
                 }
+                result = insert_odds_data(data)
+                if result['success']:
+                    logger.info(f"Inserted odds for {home_team} vs {away_team}")
+                else:
+                    logger.error(f"Failed to insert odds: {result['error']}")
+    except Exception as e:
+        logger.error(f"Error fetching odds data: {e}")
 
-                # Validate required fields
-                if not all([formatted_game['home_team'], formatted_game['away_team'], formatted_game['moneyline_odds']]):
-                    logger.warning(f"Invalid game data for {game.get('id')} in {sport}: {formatted_game}")
-                    continue
-
-                odds_data.append(formatted_game)
-                insert_odds_data(formatted_game)
-            logger.info(f"Successfully fetched {len(data)} games for {sport}")
-
-        except requests.RequestException as e:
-            logger.error(f"Error fetching odds for {sport}: {e}")
-            continue
-
-    return odds_data
-
-if __name__ == '__main__':
-    # Fetch odds for all sports
-    all_odds = fetch_odds()
-    print(f"Fetched {len(all_odds)} games across all sports")
-    
-    # Test specific sport (e.g., NFL)
-    nfl_odds = fetch_odds(sport_key='americanfootball_nfl')
-    print(f"Fetched {len(nfl_odds)} NFL games")
+if __name__ == "__main__":
+    fetch_odds_data()
