@@ -1,10 +1,9 @@
--- Creates the team_stats table for team-level statistics (MLB focus, extensible to other sports)
 CREATE TABLE team_stats (
     id SERIAL PRIMARY KEY,
-    sport VARCHAR(50),
-    team_name VARCHAR(100),
-    stat_type VARCHAR(50),
-    season INTEGER, -- Added for yearly context
+    sport VARCHAR(50) NOT NULL,
+    team_name VARCHAR(100) NOT NULL,
+    stat_type VARCHAR(50) NOT NULL,
+    season INTEGER NOT NULL,
     games INTEGER,
     at_bats INTEGER,
     runs INTEGER,
@@ -22,7 +21,7 @@ CREATE TABLE team_stats (
     run_line_wins INTEGER,
     run_line_losses INTEGER,
     run_line_cover_pct FLOAT,
-    source VARCHAR(50),
+    source VARCHAR(100),
     stat_date DATE,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );

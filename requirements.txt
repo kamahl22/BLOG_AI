@@ -1,2 +1,9 @@
-pytest==8.3.3
-flake8==7.1.1
+supabase>=2.15.0
+beautifulsoup4
+pandas>=2.2.3
+requests
+python-dotenv
+importlib_metadata
+setuptools
+pybaseball
+discord.py

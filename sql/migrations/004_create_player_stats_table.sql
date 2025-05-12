@@ -1,12 +1,11 @@
--- Creates the player_stats table for player-level season totals (MLB focus)
 CREATE TABLE player_stats (
     id SERIAL PRIMARY KEY,
-    sport VARCHAR(50),
-    player_name VARCHAR(100),
-    team_name VARCHAR(100),
-    stat_type VARCHAR(50),
-    season INTEGER, -- Added for yearly context
-    games INTEGER, -- Renamed from games_played for consistency
+    sport VARCHAR(50) NOT NULL,
+    player_name VARCHAR(100) NOT NULL,
+    team_name VARCHAR(100) NOT NULL,
+    stat_type VARCHAR(50) NOT NULL,
+    season INTEGER NOT NULL,
+    games INTEGER,
     at_bats INTEGER,
     runs INTEGER,
     hits INTEGER,
@@ -22,7 +21,7 @@ CREATE TABLE player_stats (
     on_base_pct FLOAT,
     slugging_pct FLOAT,
     ops FLOAT,
-    source VARCHAR(50),
+    source VARCHAR(100),
     stat_date DATE,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );

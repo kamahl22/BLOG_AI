@@ -1,12 +1,11 @@
--- Creates the player_splits table for player-level splits (e.g., vs. Left, Home)
 CREATE TABLE player_splits (
     id SERIAL PRIMARY KEY,
-    sport VARCHAR(50),
-    player_name VARCHAR(100),
-    team_name VARCHAR(100),
-    split_type VARCHAR(50),
-    split_value VARCHAR(100),
-    season INTEGER, -- Added for yearly context
+    sport VARCHAR(50) NOT NULL,
+    player_name VARCHAR(100) NOT NULL,
+    team_name VARCHAR(100) NOT NULL,
+    split_type VARCHAR(50) NOT NULL,
+    split_value VARCHAR(100) NOT NULL,
+    season INTEGER NOT NULL,
     at_bats INTEGER,
     runs INTEGER,
     hits INTEGER,
@@ -22,7 +21,7 @@ CREATE TABLE player_splits (
     on_base_pct FLOAT,
     slugging_pct FLOAT,
     ops FLOAT,
-    source VARCHAR(50),
+    source VARCHAR(100),
     stat_date DATE,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );

@@ -1,12 +1,10 @@
--- Drops and recreates the odds_data table to fix schema issues
-DROP TABLE IF EXISTS odds_data;
 CREATE TABLE odds_data (
     id SERIAL PRIMARY KEY,
-    sport VARCHAR(50),
-    home_team VARCHAR(100),
-    away_team VARCHAR(100),
-    home_odds INTEGER, -- Added to store home team moneyline odds
-    away_odds INTEGER, -- Added to store away team moneyline odds
+    sport VARCHAR(50) NOT NULL,
+    home_team VARCHAR(100) NOT NULL,
+    away_team VARCHAR(100) NOT NULL,
+    home_odds INTEGER,
+    away_odds INTEGER,
     game_date DATE,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
