@@ -1,0 +1,341 @@
+sports/espn/sport/MLB/
+    teams
+        (team name)_roster
+            (player name) list of players on roster folders
+                (player name)_stats - complete but need to update team roster script to creste this for each player found on roster
+                (player name)_splits - complete but need to update team roster script to creste this for each player found on roster
+                (player name)_news - is there a easier way to get this rather than limiting it to espn? I'm sure there is another site that gathers news from espn. Creating this seems redundant.
+                (player name)_gamelog - complete but need to update team roster script to creste this for each player found on roster 
+                (player name)_batvspitch - complete but need to update team roster script to creste this for each player found on roster
+        (team name)_stats
+        (team name)_splits
+        (team name)_depth chart - not complete
+        (team name)_injuries - not complete
+        (team name)_transactions - not complete
+
+teamrankings/MLB/
+    teams
+        (team name)_roster
+            (player name) list of players on roster folders
+                (player name)_stats - complete
+                (player name)_splits - complete
+                (player name) bio - Not complete but can be completed elsewhere.
+                (player name)_news - is there a easier way to get this rather than limiting it to espn? I'm sure there is another site that gathers news from espn. Creating this seems redundant.
+                (player name)_gamelog - complete 
+                (player name)_batvspitch - complete
+
+        (team name)_gamelog - not complete
+        (team name)_stats - not complete
+            Power_Rankings - not complete
+            Projections - not complete
+        (team name)_player_stats - not complete
+        (team name)_schedule - is there a easier way to get this rather than limiting it to espn? I'm sure there is another site that gathers news from espn. Creating this seems redundant.
+        (team name)_depth chart - not complete
+        (team name)_injuries - not complete
+        (team name)_transactions - not complete
+        (team name)_runline_results - not complete
+        (team name)_Over/Under Results
+        (team name)_Win-Loss Trends
+        (team name)_Run Line Trends
+        (team name)_Over/Under Trends
+
+    Stats
+        Team Stats
+            Team Batting
+                Runs per Game
+                At Bats per Game
+                Hits per Game
+                Home Runs per Game
+                Singles per Game
+                Doubles per Game
+                Triples per Game
+                RBIs per Game
+                Walks per Game
+                Strikeouts per Game
+                Stolen Bases per Game
+                Stolen Bases Attempted per Game
+                Caught Stealing per Game
+                Sacrifice Hits per Game
+                Sacrifice Flys per Game
+                Left On Base per Game
+                Team Left On Base per Game
+                Hit By Pitch per Game
+                Grounded Into Double Plays per Game
+                Runners Left in Scoring Position per Game
+                Total Bases per Game
+                Batting Average
+                Slugging %
+                On Base %
+                On Base Plus Slugging %
+            Team Advanced Batting
+                Plate Appearances
+                Run Differential
+                Batting Average on Balls in Play
+                Isolated Power
+                Secondary Average
+            Team Batting Ratios
+                At Bats per Home Run
+                Home Run %
+                Strikeout %
+                Walk %
+                Extra Base Hit %
+                Hits for Extra Bases %
+                Stolen Base %
+                Hits per Run
+            Team Pitching
+                Outs Pitched per Game
+                Earned Runs Against per Game
+                Earned Run Average
+                Walks Plus Hits per Inning Pitched
+                Strikeouts per 9
+                Hits per 9
+                Home Runs per 9
+                Walks per 9
+                Strikeouts per Walk
+                Shutouts
+            Team Fielding
+                Double Plays per Game
+                Errors per Game
+            Opponent Batting
+                Opponent Runs per Game
+                Opponent At Bats per Game
+                Opponent Hits per Game
+                Opponent Home Runs per Game
+                Opponent Singles per Game
+                Opponent Doubles per Game
+                Opponent Triples per Game
+                Opponent RBIs per Game
+                pponent Walks per Game
+                Opponent Strikeouts per Game
+                Opponent Stolen Bases per Game
+                Opponent Stolen Bases Attempted
+                Opponent Caught Stealing per Game
+                Opponent Sacrifice Hits per Game
+                Opponent Sacrifice Flys per Game
+                Opponent Left On Base per Game
+                Opponent Team Left On Base per Game
+                Opponent Hit By Pitch per Game
+                Opponent Grounded Into Double Plays per Game
+                Opponent Runners Left in Scoring Pos per Game
+                Opponent Total Bases per Game
+                Opponent Batting Average
+                Opponent Slugging %
+                Opponent On Base %
+                Opponent On Base Plus Slugging %
+            Opponent Advanced Batting
+                Opponent Plate Appearances
+                Opponent Run Differential
+                Opponent Batting Average on Balls in Play
+                Opponent Isolated Power
+                Opponent Secondary Average
+            Opponent Batting Ratios
+                Opponent At Bats per Home Run
+                Opponent Home Run %
+                Opponent Strikeout %
+                Opponent Walk %
+                Opponent Extra Base Hit %
+                Opponent Hits for Extra Bases %
+                Opponent Stolen Base %
+                Opponent Hits per Run
+            Opponent Pitching
+                Opponent Outs Pitched per Game
+                Opponent Earned Runs Against per Game
+                Opponent Earned Run Average
+                Opponent Walks Plus Hits / Innings Pitched
+                Opponent Strikeouts per 9
+                Opponent Hits per 9
+                Opponent Home Runs per 9
+                Opponent Walks per 9
+                Opponent Strikeouts per Walk
+                Opponent Shutouts
+            Opponent Fielding
+                Opponent Double Plays per Game
+                Opponent Errors per Game
+            Other
+                Games Played
+                Yes Run First Inning (YRFI) %
+                No Run First Inning (NRFI) %
+                Opponent Yes Run First Inning (YRFI) %
+                Opponent No Run First Inning (NRFI) %
+                1st Inning Runs per Game
+                2nd Inning Runs per Game
+                3rd Inning Runs per Game
+                4th Inning Runs per Game
+                5th Inning Runs per Game
+                6th Inning Runs per Game
+                7th Inning Runs per Game
+                8th Inning Runs per Game
+                9th Inning Runs per Game
+                Extra Inning Runs per Game
+                Opponent 1st Inning Runs per Game
+                Opponent 2nd Inning Runs per Game
+                Opponent 3rd Inning Runs per Game
+                Opponent 4th Inning Runs per Game
+                Opponent 5th Inning Runs per Game
+                Opponent 6th Inning Runs per Game
+                Opponent 7th Inning Runs per Game
+                Opponent 8th Inning Runs per Game
+                Opponent 9th Inning Runs per Game
+                Opponent Extra Inning Runs per Game
+                First 4 Innings Runs per Game
+                First 5 Innings Runs per Game
+                First 6 Innings Runs per Game
+                Last 2 Innings Runs per Game (8th to 9th)
+                Last 3 Innings Runs per Game (7th to 9th)
+                Last 4 Innings Runs per Game (6th to 9th)
+                Opponent First 4 Innings Runs per Game
+                Opponent First 5 Innings Runs per Game
+                Opponent First 6 Innings Runs per Game
+            Opponent Last 2 Innings Runs per Game (8th to 9th)
+                Opponent Last 3 Innings Runs per Game (7th to 9th)
+            Opponent Last 4 Innings Runs per Game (6th to 9th)
+            Winning Percentage
+                Win % - All Games
+                Win % - Close Games
+                Opponent Win % - All Games
+                Opponent Win % - Close Games
+        Player Stats
+            Pitching
+                Strikeouts
+                Innings Pitched
+                Hits Allowed
+                Runs Allowed
+                Earned Runs Allowed
+                Walks
+                Games Pitched
+                Games Started
+                Home Runs Allowed
+                Pitches Thrown
+                Strikes Thrown
+                Ground Ball Outs
+                Fly Ball Outs
+                Batters Faced
+                Earned Run Average
+                Walks Plus Hits per Inning Pitched
+            Pitching Results
+                Quality Starts
+                Wins
+                Losses
+                No Decisions
+                Holds
+                Saves
+                Blown Saves
+                Save %
+                Complete Games
+                Shutouts
+                Win %
+                Percent of Starts Won
+                Cheap Wins
+                Tough Losses
+                Quality Start %
+            Advanced Pitching
+                Strikeouts per 9
+                Hits Allowed per 9
+                Home Runs Allowed per 9
+                Walks per 9
+                Strikeouts per Walk
+                Pitches per Plate Appearance
+                Pitches per Game
+                Fielding Independent Pitching
+            Pitching Ratios
+                Strike %
+                Home Run %
+                Strikeout %
+                Walk %
+                Ground Outs to Air Outs
+            Batting
+                Games Played
+                Games Started
+                At Bats
+                Runs
+                Hits
+                Singles
+                Doubles
+                Triples
+                Home Runs
+                Total Bases
+                Runs Batted In
+                Walks
+                Intentional Walks
+                Strikeouts
+                Hit By Pitch
+                Stolen Bases
+                Caught Stealing
+                Grounded into Double Plays
+                Left On Base
+                Two Out RBIs
+                Runners Left In Scoring Position
+                Batting Average
+                On Base %
+                Slugging %
+                On Base Plus Slugging
+                Fielding Errors
+            Advanced Batting
+                Plate Appearances
+                Outs Made
+                Batting Average on Balls in Play
+                Isolated Power
+                Secondary Average
+                At Bats per Home Run
+            Batting Ratios
+                Home Run %
+                Strikeout %
+                Base On Balls %
+                Extra Base Hit %
+                Hits for Extra Bases %
+                Stolen Base %
+            Batting Events
+                Games With A Hit
+                Percent of Games With A Hit
+                Percent of Starts With A Hit
+                Games With A Home Run
+                Percent of Games With A Home Run
+                Percent of Starts With A Home Run
+                Games With A Run
+                Percent of Games With A Run
+                Percent of Starts With A Run
+                Games With A Run Batted In
+                Percent of Games With A Run Batted In
+                Percent of Starts With A Run Batted In
+                Games With 2+ Total Bases
+                Percent of Games With 2+ Total Bases
+                Percent of Starts With 2+ Total Bases
+                Games With A Stolen Base
+                Percent of Games With A Stolen Base
+                Percent of Starts With A Stolen Base
+    Rankings
+        Predictive Power Rating
+        Home Power Rating
+        Away Power Rating
+        Home Advantage Power Rating
+        Strength of Schedule Power Rating
+        Future SOS Power Rating
+        Season SOS Power Rating
+        SOS Power Rating - Basic Method
+        In-Division SOS Power Rating
+        Non-Division SOS Power Rating
+        Last 5 Games Power Rating
+        Last 10 Games Power Rating
+        In-Division Power Rating
+        Non-Division Power Rating
+        Luck Power Rating
+        Consistency Power Rating
+        Vs. Teams 1-5 Power Rating
+        Vs. Teams 6-10 Power Rating
+        Vs. Teams 11-16 Power Rating
+        Vs. Teams 17-22 Power Rating
+        Vs. Teams 23-30 Power Rating
+    2025 MLB Schedule
+        MLB_schedule
+    Projections and standings
+        Current standings
+        Projected standings
+        Postseason seeds
+    Team Trends
+        Win/Loss
+        Run-Line
+        Over/Under
+    Betting odds - this changes everyday and can change as live odds
+
+MLB.com
+    #can be updated later
