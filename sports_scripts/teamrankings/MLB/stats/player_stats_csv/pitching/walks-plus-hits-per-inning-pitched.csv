@@ -1,0 +1,81 @@
+Rank,Player,Team,Pos,Value
+1,Nathan Eovaldi,Texas Rangers,P,0.766
+2,Joe Ryan,Minnesota Twins,P,0.789
+3,Hunter Brown,Houston Astros,P,0.829
+4,Bryan Woo,Seattle Mariners,P,0.867
+5,Zack Wheeler,Philadelphia Phillies,P,0.891
+6,Yoshinobu Yamamoto,Los Angeles Dodgers,P,0.919
+7,Tarik Skubal,Detroit Tigers,P,0.939
+8,Paul Skenes,Pittsburgh Pirates,P,0.942
+8,Max Fried,New York Yankees,P,0.942
+10,Jacob deGrom,Texas Rangers,P,0.980
+11,Tyler Mahle,Texas Rangers,P,0.982
+12,Carlos Rodon,New York Yankees,P,0.989
+13,Nick Pivetta,San Diego Padres,P,0.993
+14,Merrill Kelly,Arizona Diamondbacks,P,1.000
+15,Michael King,San Diego Padres,P,1.024
+16,Tomoyuki Sugano,Baltimore Orioles,P,1.025
+17,Matthew Liberatore,St. Louis Cardinals,P,1.032
+18,Nick Lodolo,Cincinnati Reds,P,1.057
+19,Kevin Gausman,Toronto Blue Jays,P,1.059
+20,Spencer Schwellenbach,Atlanta Braves,P,1.060
+21,Freddy Peralta,Milwaukee Brewers,P,1.060
+22,Garrett Crochet,Boston Red Sox,P,1.064
+23,Kris Bubic,Kansas City Royals,P,1.076
+24,Tyler Anderson,Los Angeles Angels,P,1.093
+25,Seth Lugo,Kansas City Royals,P,1.094
+25,Jameson Taillon,Chicago Cubs,P,1.094
+27,JP Sears,Sacramento Athletics,P,1.102
+28,Logan Webb,San Francisco Giants,P,1.121
+29,Sonny Gray,St. Louis Cardinals,P,1.125
+30,Framber Valdez,Houston Astros,P,1.127
+31,Bailey Falter,Pittsburgh Pirates,P,1.130
+32,Nick Martinez,Cincinnati Reds,P,1.145
+33,Andrew Heaney,Pittsburgh Pirates,P,1.145
+34,Zack Littell,Tampa Bay Rays,P,1.146
+35,Jesus Luzardo,Philadelphia Phillies,P,1.150
+36,Ronel Blanco,Houston Astros,P,1.159
+37,Jake Irvin,Washington Nationals,P,1.160
+38,Cristopher Sanchez,Philadelphia Phillies,P,1.176
+39,Chris Paddack,Minnesota Twins,P,1.179
+40,Grant Holmes,Atlanta Braves,P,1.181
+41,Kodai Senga,New York Mets,P,1.212
+42,Robbie Ray,San Francisco Giants,P,1.221
+42,Chris Bassitt,Toronto Blue Jays,P,1.221
+44,Matthew Boyd,Chicago Cubs,P,1.227
+45,Michael Wacha,Kansas City Royals,P,1.235
+45,Brandon Pfaadt,Arizona Diamondbacks,P,1.235
+47,Dylan Cease,San Diego Padres,P,1.241
+48,Clay Holmes,New York Mets,P,1.244
+49,Jeffrey Springs,Sacramento Athletics,P,1.245
+50,Luis Castillo,Seattle Mariners,P,1.260
+51,Kyle Hendricks,Los Angeles Angels,P,1.268
+52,Davis Martin,Chicago White Sox,P,1.271
+53,Michael Lorenzen,Kansas City Royals,P,1.273
+53,Erick Fedde,St. Louis Cardinals,P,1.273
+55,Luis Severino,Sacramento Athletics,P,1.274
+56,Tanner Bibee,Cleveland Guardians,P,1.275
+57,Will Warren,New York Yankees,P,1.286
+58,MacKenzie Gore,Washington Nationals,P,1.296
+59,Mitchell Parker,Washington Nationals,P,1.301
+60,Jonathan Cannon,Chicago White Sox,P,1.309
+61,Mitch Keller,Pittsburgh Pirates,P,1.310
+62,Ryan Pepiot,Tampa Bay Rays,P,1.314
+63,Max Meyer,Miami Marlins,P,1.331
+63,Andre Pallante,St. Louis Cardinals,P,1.331
+65,Taj Bradley,Tampa Bay Rays,P,1.342
+66,David Peterson,New York Mets,P,1.351
+67,Chris Sale,Atlanta Braves,P,1.354
+68,Bailey Ober,Minnesota Twins,P,1.366
+69,Zac Gallen,Arizona Diamondbacks,P,1.375
+70,Dean Kremer,Baltimore Orioles,P,1.383
+71,Luis Ortiz,Cleveland Guardians,P,1.386
+72,Shane Baz,Tampa Bay Rays,P,1.408
+73,Justin Verlander,San Francisco Giants,P,1.423
+74,Jose Berrios,Toronto Blue Jays,P,1.431
+75,Yusei Kikuchi,Los Angeles Angels,P,1.444
+76,Jack Kochanowicz,Los Angeles Angels,P,1.450
+77,Jose Soriano,Los Angeles Angels,P,1.483
+78,Aaron Nola,Philadelphia Phillies,P,1.510
+79,Kyle Freeland,Colorado Rockies,P,1.599
+80,Antonio Senzatela,Colorado Rockies,P,1.973

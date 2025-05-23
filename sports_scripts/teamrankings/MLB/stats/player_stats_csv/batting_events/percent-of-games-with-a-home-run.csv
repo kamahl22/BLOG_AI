@@ -1,0 +1,101 @@
+Rank,Player,Team,Pos,Value
+1,Shohei Ohtani,Los Angeles Dodgers,P,34.0%
+2,Kyle Schwarber,Philadelphia Phillies,LF,33.3%
+3,Cal Raleigh,Seattle Mariners,C,27.7%
+3,Aaron Judge,New York Yankees,CF,27.7%
+5,Logan O'Hoppe,Los Angeles Angels,C,26.8%
+6,Taylor Ward,Los Angeles Angels,LF,26.1%
+7,Spencer Torkelson,Detroit Tigers,1B,25.0%
+8,Corbin Carroll,Arizona Diamondbacks,RF,24.5%
+9,Fernando Tatis Jr.,San Diego Padres,RF,24.4%
+10,Kyle Manzardo,Cleveland Guardians,1B,24.4%
+10,Byron Buxton,Minnesota Twins,CF,24.4%
+12,Freddie Freeman,Los Angeles Dodgers,1B,23.7%
+13,Wyatt Langford,Texas Rangers,LF,23.1%
+14,James Wood,Washington Nationals,LF,22.5%
+14,Kyle Tucker,Chicago Cubs,RF,22.5%
+16,Seiya Suzuki,Chicago Cubs,RF,22.2%
+17,Ben Rice,New York Yankees,1B,22.0%
+18,Riley Greene,Detroit Tigers,LF,21.3%
+19,Shea Langeliers,Sacramento Athletics,C,20.9%
+20,Matt Olson,Atlanta Braves,1B,20.8%
+21,Cedric Mullins,Baltimore Orioles,CF,20.5%
+22,Eugenio Suárez,Arizona Diamondbacks,3B,20.4%
+22,Brent Rooker,Sacramento Athletics,LF,20.4%
+22,Pete Crow-Armstrong,Chicago Cubs,CF,20.4%
+22,Dansby Swanson,Chicago Cubs,SS,20.4%
+22,Alex Bregman,Boston Red Sox,2B,20.4%
+27,Andy Pages,Los Angeles Dodgers,CF,20.0%
+27,Rafael Devers,Boston Red Sox,3B,20.0%
+27,Austin Wells,New York Yankees,C,20.0%
+30,Kerry Carpenter,Detroit Tigers,RF,19.6%
+31,Oneil Cruz,Pittsburgh Pirates,CF,19.5%
+32,CJ Abrams,Washington Nationals,SS,19.4%
+33,Wilyer Abreu,Boston Red Sox,CF,19.2%
+34,Ryan O'Hearn,Baltimore Orioles,1B,18.4%
+35,Pete Alonso,New York Mets,1B,18.4%
+36,Junior Caminero,Tampa Bay Rays,3B,17.8%
+36,Lourdes Gurriel Jr.,Arizona Diamondbacks,LF,17.8%
+36,Marcell Ozuna,Atlanta Braves,DH,17.8%
+39,Gunnar Henderson,Baltimore Orioles,3B,17.5%
+40,Isaac Paredes,Houston Astros,3B,17.0%
+40,Julio Rodriguez,Seattle Mariners,CF,17.0%
+42,Wilmer Flores,San Francisco Giants,1B,16.7%
+42,Francisco Lindor,New York Mets,SS,16.7%
+42,Heliot Ramos,San Francisco Giants,CF,16.7%
+42,Matt Chapman,San Francisco Giants,3B,16.7%
+46,Nathaniel Lowe,Washington Nationals,1B,16.3%
+46,Vinnie Pasquantino,Kansas City Royals,1B,16.3%
+48,Cody Bellinger,New York Yankees,CF,16.3%
+49,Jose Ramirez,Cleveland Guardians,3B,15.9%
+50,Hunter Goodman,Colorado Rockies,C,15.6%
+50,Kyle Stowers,Miami Marlins,LF,15.6%
+52,Michael Busch,Chicago Cubs,1B,15.2%
+52,Trevor Larnach,Minnesota Twins,LF,15.2%
+54,Josh Jung,Texas Rangers,3B,15.0%
+55,Christian Yelich,Milwaukee Brewers,LF,14.9%
+55,Brandon Nimmo,New York Mets,LF,14.9%
+57,Josh Bell,Washington Nationals,1B,14.6%
+57,Matt McLain,Cincinnati Reds,SS,14.6%
+59,Lars Nootbaar,St. Louis Cardinals,RF,14.6%
+59,Bryce Harper,Philadelphia Phillies,1B,14.6%
+61,Tyler Soderstrom,Sacramento Athletics,1B,14.3%
+61,Gavin Sheets,San Diego Padres,RF,14.3%
+61,Anthony Santander,Toronto Blue Jays,RF,14.3%
+64,Elly De La Cruz,Cincinnati Reds,SS,14.0%
+65,Gleyber Torres,Detroit Tigers,2B,13.9%
+66,Jonathan Aranda,Tampa Bay Rays,1B,13.6%
+66,Brandon Lowe,Tampa Bay Rays,2B,13.6%
+66,Jorge Soler,Los Angeles Angels,RF,13.6%
+69,Lawrence Butler,Sacramento Athletics,RF,13.3%
+69,Dylan Crews,Washington Nationals,RF,13.3%
+69,Randy Arozarena,Seattle Mariners,LF,13.3%
+69,Yandy Diaz,Tampa Bay Rays,1B,13.3%
+73,Mookie Betts,Los Angeles Dodgers,SS,13.0%
+73,JJ Bleday,Sacramento Athletics,CF,13.0%
+73,Rhys Hoskins,Milwaukee Brewers,1B,13.0%
+73,Anthony Volpe,New York Yankees,SS,13.0%
+77,Vladimir Guerrero Jr.,Toronto Blue Jays,1B,12.8%
+77,Michael Toglia,Colorado Rockies,1B,12.8%
+77,Bryan Reynolds,Pittsburgh Pirates,LF,12.8%
+77,Ryan McMahon,Colorado Rockies,3B,12.8%
+81,Jackson Chourio,Milwaukee Brewers,LF,12.5%
+81,Juan Soto,New York Mets,RF,12.5%
+81,Willson Contreras,St. Louis Cardinals,1B,12.5%
+81,Austin Riley,Atlanta Braves,3B,12.5%
+81,Adolis Garcia,Texas Rangers,RF,12.5%
+81,Jeremy Pena,Houston Astros,SS,12.5%
+81,Geraldo Perdomo,Arizona Diamondbacks,SS,12.5%
+88,Kristian Campbell,Boston Red Sox,2B,12.2%
+89,George Springer,Toronto Blue Jays,RF,11.9%
+89,Jackson Holliday,Baltimore Orioles,SS,11.9%
+89,Yainer Diaz,Houston Astros,C,11.9%
+92,Luis Robert Jr.,Chicago White Sox,CF,11.4%
+92,Mike Yastrzemski,San Francisco Giants,RF,11.4%
+94,Mark Vientos,New York Mets,3B,11.1%
+94,Nolan Arenado,St. Louis Cardinals,3B,11.1%
+94,Masyn Winn,St. Louis Cardinals,SS,11.1%
+94,Max Kepler,Philadelphia Phillies,RF,11.1%
+98,Miguel Vargas,Chicago White Sox,3B,10.9%
+98,Trevor Story,Boston Red Sox,2B,10.9%
+100,Christian Walker,Houston Astros,1B,10.6%

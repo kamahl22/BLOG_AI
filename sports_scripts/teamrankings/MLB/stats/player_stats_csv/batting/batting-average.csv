@@ -1,0 +1,101 @@
+Rank,Player,Team,Pos,Value
+1,Aaron Judge,New York Yankees,CF,0.403
+2,Freddie Freeman,Los Angeles Dodgers,1B,0.371
+3,Jacob Wilson,Sacramento Athletics,SS,0.341
+4,Paul Goldschmidt,New York Yankees,1B,0.339
+5,Will Smith,Los Angeles Dodgers,C,0.339
+6,Brendan Donovan,St. Louis Cardinals,2B,0.330
+7,CJ Abrams,Washington Nationals,SS,0.313
+8,Steven Kwan,Cleveland Guardians,LF,0.311
+9,Shohei Ohtani,Los Angeles Dodgers,P,0.311
+10,Maikel Garcia,Kansas City Royals,3B,0.310
+11,Kyle Stowers,Miami Marlins,LF,0.310
+12,Jonathan Aranda,Tampa Bay Rays,1B,0.310
+13,Manny Machado,San Diego Padres,3B,0.310
+14,Geraldo Perdomo,Arizona Diamondbacks,SS,0.307
+15,Jake Meyers,Houston Astros,CF,0.307
+16,Bobby Witt Jr.,Kansas City Royals,SS,0.306
+17,Trea Turner,Philadelphia Phillies,SS,0.305
+18,Alex Bregman,Boston Red Sox,2B,0.304
+19,Fernando Tatis Jr.,San Diego Padres,RF,0.303
+20,Jeremy Pena,Houston Astros,SS,0.302
+21,Rhys Hoskins,Milwaukee Brewers,1B,0.297
+22,Brice Turang,Milwaukee Brewers,2B,0.297
+23,Luis Arraez,San Diego Padres,1B,0.296
+23,Jose Ramirez,Cleveland Guardians,3B,0.296
+25,Pete Alonso,New York Mets,1B,0.294
+26,Gavin Lux,Cincinnati Reds,LF,0.294
+27,Heliot Ramos,San Francisco Giants,CF,0.293
+28,Nico Hoerner,Chicago Cubs,2B,0.292
+29,Josh H. Smith,Texas Rangers,3B,0.292
+30,Bo Bichette,Toronto Blue Jays,SS,0.292
+31,Josh Naylor,Arizona Diamondbacks,1B,0.291
+32,Zach McKinstry,Detroit Tigers,RF,0.290
+33,Kerry Carpenter,Detroit Tigers,RF,0.289
+34,Ryan O'Hearn,Baltimore Orioles,1B,0.289
+35,Vladimir Guerrero Jr.,Toronto Blue Jays,1B,0.289
+36,Josh Jung,Texas Rangers,3B,0.288
+37,Riley Greene,Detroit Tigers,LF,0.287
+37,Rafael Devers,Boston Red Sox,3B,0.287
+39,Pete Crow-Armstrong,Chicago Cubs,CF,0.285
+40,Hunter Goodman,Colorado Rockies,C,0.285
+40,James Wood,Washington Nationals,LF,0.285
+42,Austin Riley,Atlanta Braves,3B,0.283
+43,Gleyber Torres,Detroit Tigers,2B,0.283
+43,Gavin Sheets,San Diego Padres,RF,0.283
+43,Alejandro Kirk,Toronto Blue Jays,C,0.283
+46,Sal Frelick,Milwaukee Brewers,RF,0.282
+47,Nick Castellanos,Philadelphia Phillies,RF,0.281
+48,Mike Yastrzemski,San Francisco Giants,RF,0.280
+48,TJ Friedl,Cincinnati Reds,CF,0.280
+50,Francisco Lindor,New York Mets,SS,0.280
+51,Keibert Ruiz,Washington Nationals,C,0.280
+52,Nolan Schanuel,Los Angeles Angels,1B,0.277
+52,Corbin Carroll,Arizona Diamondbacks,RF,0.277
+54,Jung Hoo Lee,San Francisco Giants,CF,0.275
+55,J.P. Crawford,Seattle Mariners,SS,0.274
+56,Andy Pages,Los Angeles Dodgers,CF,0.274
+57,Bryce Harper,Philadelphia Phillies,1B,0.272
+57,Lenyn Sosa,Chicago White Sox,3B,0.272
+59,Victor Scott II,St. Louis Cardinals,CF,0.272
+59,Jackson Holliday,Baltimore Orioles,SS,0.272
+61,Tyler Soderstrom,Sacramento Athletics,1B,0.270
+62,Kyle Tucker,Chicago Cubs,RF,0.268
+63,Masyn Winn,St. Louis Cardinals,SS,0.267
+64,Marcell Ozuna,Atlanta Braves,DH,0.266
+65,Ian Happ,Chicago Cubs,LF,0.265
+65,Bryson Stott,Philadelphia Phillies,2B,0.265
+67,Isaac Paredes,Houston Astros,3B,0.264
+67,Alec Bohm,Philadelphia Phillies,3B,0.264
+69,Jarren Duran,Boston Red Sox,CF,0.264
+70,Logan O'Hoppe,Los Angeles Angels,C,0.264
+71,Wilyer Abreu,Boston Red Sox,CF,0.264
+72,Xavier Edwards,Miami Marlins,SS,0.263
+73,Dansby Swanson,Chicago Cubs,SS,0.262
+74,Joey Bart,Pittsburgh Pirates,C,0.262
+75,Mookie Betts,Los Angeles Dodgers,SS,0.261
+76,Byron Buxton,Minnesota Twins,CF,0.261
+77,Michael Busch,Chicago Cubs,1B,0.260
+78,Wilmer Flores,San Francisco Giants,1B,0.259
+79,Ben Rice,New York Yankees,1B,0.259
+80,Cody Bellinger,New York Yankees,CF,0.258
+81,Kyle Schwarber,Philadelphia Phillies,LF,0.257
+81,George Springer,Toronto Blue Jays,RF,0.257
+83,Wyatt Langford,Texas Rangers,LF,0.257
+84,Shea Langeliers,Sacramento Athletics,C,0.256
+85,Gabriel Arias,Cleveland Guardians,3B,0.255
+86,William Contreras,Milwaukee Brewers,C,0.255
+87,Gunnar Henderson,Baltimore Orioles,3B,0.253
+88,Ty France,Minnesota Twins,1B,0.253
+89,Seiya Suzuki,Chicago Cubs,RF,0.253
+90,Lars Nootbaar,St. Louis Cardinals,RF,0.251
+91,Trevor Larnach,Minnesota Twins,LF,0.250
+91,Yandy Diaz,Tampa Bay Rays,1B,0.250
+93,Willson Contreras,St. Louis Cardinals,1B,0.249
+94,Juan Soto,New York Mets,RF,0.247
+95,Xander Bogaerts,San Diego Padres,2B,0.247
+96,Elly De La Cruz,Cincinnati Reds,SS,0.246
+97,Ke'Bryan Hayes,Pittsburgh Pirates,3B,0.246
+98,Trey Sweeney,Detroit Tigers,SS,0.245
+99,Andrew McCutchen,Pittsburgh Pirates,RF,0.243
+100,Eric Wagaman,Miami Marlins,3B,0.242

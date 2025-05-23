@@ -1,0 +1,101 @@
+Rank,Player,Team,Pos,Value
+1,Hunter Brown,Houston Astros,P,0.889
+2,Zack Wheeler,Philadelphia Phillies,P,0.800
+3,Bryan Woo,Seattle Mariners,P,0.778
+4,Logan Webb,San Francisco Giants,P,0.700
+4,Kris Bubic,Kansas City Royals,P,0.700
+4,Mitch Keller,Pittsburgh Pirates,P,0.700
+4,Nathan Eovaldi,Texas Rangers,P,0.700
+4,Framber Valdez,Houston Astros,P,0.700
+4,Paul Skenes,Pittsburgh Pirates,P,0.700
+4,Max Fried,New York Yankees,P,0.700
+4,Spencer Schwellenbach,Atlanta Braves,P,0.700
+12,Seth Lugo,Kansas City Royals,P,0.667
+12,Matthew Liberatore,St. Louis Cardinals,P,0.667
+12,Matthew Boyd,Chicago Cubs,P,0.667
+15,Hunter Greene,Cincinnati Reds,P,0.625
+15,Corbin Burnes,Arizona Diamondbacks,P,0.625
+17,Jesus Luzardo,Philadelphia Phillies,P,0.600
+17,Garrett Crochet,Boston Red Sox,P,0.600
+17,Yoshinobu Yamamoto,Los Angeles Dodgers,P,0.600
+17,Nick Lodolo,Cincinnati Reds,P,0.600
+17,Zach Eflin,Baltimore Orioles,P,0.600
+17,Jameson Taillon,Chicago Cubs,P,0.600
+17,Brandon Pfaadt,Arizona Diamondbacks,P,0.600
+17,Merrill Kelly,Arizona Diamondbacks,P,0.600
+17,Ryan Pepiot,Tampa Bay Rays,P,0.600
+17,Tyler Mahle,Texas Rangers,P,0.600
+17,Robbie Ray,San Francisco Giants,P,0.600
+17,Zack Littell,Tampa Bay Rays,P,0.600
+29,Nick Pivetta,San Diego Padres,P,0.556
+29,Joe Ryan,Minnesota Twins,P,0.556
+29,Bailey Ober,Minnesota Twins,P,0.556
+29,Cristopher Sanchez,Philadelphia Phillies,P,0.556
+29,Taj Bradley,Tampa Bay Rays,P,0.556
+34,Erick Fedde,St. Louis Cardinals,P,0.500
+34,Luis Castillo,Seattle Mariners,P,0.500
+34,Lucas Giolito,Boston Red Sox,P,0.500
+34,Bryce Elder,Atlanta Braves,P,0.500
+34,Nick Martinez,Cincinnati Reds,P,0.500
+34,Yusei Kikuchi,Los Angeles Angels,P,0.500
+34,Jeffrey Springs,Sacramento Athletics,P,0.500
+34,Jake Irvin,Washington Nationals,P,0.500
+34,Mitchell Parker,Washington Nationals,P,0.500
+34,Martin Perez,Chicago White Sox,P,0.500
+34,Jose Berrios,Toronto Blue Jays,P,0.500
+34,Tarik Skubal,Detroit Tigers,P,0.500
+34,Jose Soriano,Los Angeles Angels,P,0.500
+34,Sonny Gray,St. Louis Cardinals,P,0.500
+34,MacKenzie Gore,Washington Nationals,P,0.500
+34,Clarke Schmidt,New York Yankees,P,0.500
+34,Bailey Falter,Pittsburgh Pirates,P,0.500
+51,Kevin Gausman,Toronto Blue Jays,P,0.444
+51,Davis Martin,Chicago White Sox,P,0.444
+51,Ronel Blanco,Houston Astros,P,0.444
+51,Andre Pallante,St. Louis Cardinals,P,0.444
+51,Grant Holmes,Atlanta Braves,P,0.444
+51,David Peterson,New York Mets,P,0.444
+51,JP Sears,Sacramento Athletics,P,0.444
+51,Jack Kochanowicz,Los Angeles Angels,P,0.444
+51,Tyler Anderson,Los Angeles Angels,P,0.444
+51,Max Meyer,Miami Marlins,P,0.444
+51,Andrew Heaney,Pittsburgh Pirates,P,0.444
+51,Kodai Senga,New York Mets,P,0.444
+51,Shane Baz,Tampa Bay Rays,P,0.444
+51,Tomoyuki Sugano,Baltimore Orioles,P,0.444
+65,Emerson Hancock,Seattle Mariners,P,0.429
+65,Walker Buehler,Boston Red Sox,P,0.429
+65,Casey Mize,Detroit Tigers,P,0.429
+68,Michael Wacha,Kansas City Royals,P,0.400
+68,Justin Verlander,San Francisco Giants,P,0.400
+68,Luis Severino,Sacramento Athletics,P,0.400
+68,Zac Gallen,Arizona Diamondbacks,P,0.400
+68,Dylan Cease,San Diego Padres,P,0.400
+68,Kyle Freeland,Colorado Rockies,P,0.400
+68,Michael Lorenzen,Kansas City Royals,P,0.400
+68,Clay Holmes,New York Mets,P,0.400
+68,Carlos Rodon,New York Yankees,P,0.400
+77,Pablo Lopez,Minnesota Twins,P,0.375
+77,Dustin May,Los Angeles Dodgers,P,0.375
+79,Kyle Hendricks,Los Angeles Angels,P,0.333
+79,Bowden Francis,Toronto Blue Jays,P,0.333
+79,Jose Quintana,Milwaukee Brewers,P,0.333
+79,Randy Vasquez,San Diego Padres,P,0.333
+79,Tanner Bibee,Cleveland Guardians,P,0.333
+79,Sean Burke,Chicago White Sox,P,0.333
+79,Reese Olson,Detroit Tigers,P,0.333
+79,Tanner Houck,Boston Red Sox,P,0.333
+79,Landen Roupp,San Francisco Giants,P,0.333
+79,Brady Singer,Cincinnati Reds,P,0.333
+79,Jacob deGrom,Texas Rangers,P,0.333
+79,Chad Patrick,Milwaukee Brewers,P,0.333
+79,Hunter Dobbins,Boston Red Sox,P,0.333
+79,Brayan Bello,Boston Red Sox,P,0.333
+79,Ryan Feltner,Colorado Rockies,P,0.333
+79,Hayden Wesneski,Houston Astros,P,0.333
+79,Aaron Nola,Philadelphia Phillies,P,0.333
+79,Luis Ortiz,Cleveland Guardians,P,0.333
+79,Shane Smith,Chicago White Sox,P,0.333
+98,Chris Bassitt,Toronto Blue Jays,P,0.300
+98,Chris Sale,Atlanta Braves,P,0.300
+98,Freddy Peralta,Milwaukee Brewers,P,0.300

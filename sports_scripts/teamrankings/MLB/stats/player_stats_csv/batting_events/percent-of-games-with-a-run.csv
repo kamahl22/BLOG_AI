@@ -1,0 +1,101 @@
+Rank,Player,Team,Pos,Value
+1,Shohei Ohtani,Los Angeles Dodgers,P,70.2%
+2,Aaron Judge,New York Yankees,CF,61.7%
+3,Kyle Schwarber,Philadelphia Phillies,LF,60.4%
+4,Heliot Ramos,San Francisco Giants,CF,58.3%
+5,Freddie Freeman,Los Angeles Dodgers,1B,57.9%
+6,Ian Happ,Chicago Cubs,LF,57.5%
+7,Corbin Carroll,Arizona Diamondbacks,RF,57.1%
+7,Pete Crow-Armstrong,Chicago Cubs,CF,57.1%
+9,Mookie Betts,Los Angeles Dodgers,SS,56.5%
+10,Spencer Torkelson,Detroit Tigers,1B,56.3%
+11,Byron Buxton,Minnesota Twins,CF,56.1%
+12,Masyn Winn,St. Louis Cardinals,SS,55.6%
+13,Trea Turner,Philadelphia Phillies,SS,54.4%
+13,Trevor Larnach,Minnesota Twins,LF,54.4%
+15,Juan Soto,New York Mets,RF,54.2%
+16,Fernando Tatis Jr.,San Diego Padres,RF,53.3%
+16,Zach McKinstry,Detroit Tigers,RF,53.3%
+18,Vladimir Guerrero Jr.,Toronto Blue Jays,1B,53.2%
+19,Jasson Dominguez,New York Yankees,LF,51.3%
+20,Nolan Schanuel,Los Angeles Angels,1B,51.1%
+21,Kyle Tucker,Chicago Cubs,RF,51.0%
+21,Willy Adames,San Francisco Giants,SS,51.0%
+23,CJ Abrams,Washington Nationals,SS,50.0%
+23,Lars Nootbaar,St. Louis Cardinals,RF,50.0%
+23,Elly De La Cruz,Cincinnati Reds,SS,50.0%
+23,Manny Machado,San Diego Padres,3B,50.0%
+27,Dansby Swanson,Chicago Cubs,SS,49.0%
+27,James Wood,Washington Nationals,LF,49.0%
+27,Alex Bregman,Boston Red Sox,2B,49.0%
+30,Paul Goldschmidt,New York Yankees,1B,48.9%
+31,Francisco Lindor,New York Mets,SS,47.9%
+32,Brice Turang,Milwaukee Brewers,2B,47.8%
+33,Gleyber Torres,Detroit Tigers,2B,47.2%
+34,Julio Rodriguez,Seattle Mariners,CF,46.8%
+35,Nico Hoerner,Chicago Cubs,2B,46.7%
+36,Ceddanne Rafaela,Boston Red Sox,CF,46.5%
+37,Oneil Cruz,Pittsburgh Pirates,CF,46.3%
+38,Bobby Witt Jr.,Kansas City Royals,SS,46.0%
+38,Rafael Devers,Boston Red Sox,3B,46.0%
+40,Matt Olson,Atlanta Braves,1B,45.8%
+40,Matt Chapman,San Francisco Giants,3B,45.8%
+40,Jung Hoo Lee,San Francisco Giants,CF,45.8%
+43,Steven Kwan,Cleveland Guardians,LF,45.7%
+43,Kerry Carpenter,Detroit Tigers,RF,45.7%
+45,Pete Alonso,New York Mets,1B,44.9%
+46,Ryan O'Hearn,Baltimore Orioles,1B,44.7%
+47,Cal Raleigh,Seattle Mariners,C,44.7%
+47,Trey Sweeney,Detroit Tigers,SS,44.7%
+47,Jacob Wilson,Sacramento Athletics,SS,44.7%
+50,Seiya Suzuki,Chicago Cubs,RF,44.4%
+50,Victor Scott II,St. Louis Cardinals,CF,44.4%
+52,Bryson Stott,Philadelphia Phillies,2B,44.2%
+53,Ben Rice,New York Yankees,1B,43.9%
+54,Ozzie Albies,Atlanta Braves,2B,43.8%
+55,Wyatt Langford,Texas Rangers,LF,43.6%
+56,Taylor Ward,Los Angeles Angels,LF,43.5%
+57,Gabriel Arias,Cleveland Guardians,3B,42.9%
+57,Tyler Soderstrom,Sacramento Athletics,1B,42.9%
+57,Brent Rooker,Sacramento Athletics,LF,42.9%
+60,Isaac Paredes,Houston Astros,3B,42.6%
+60,Brendan Donovan,St. Louis Cardinals,2B,42.6%
+60,Riley Greene,Detroit Tigers,LF,42.6%
+63,Lawrence Butler,Sacramento Athletics,RF,42.2%
+63,Andy Pages,Los Angeles Dodgers,CF,42.2%
+65,Cody Bellinger,New York Yankees,CF,41.9%
+66,Jackson Chourio,Milwaukee Brewers,LF,41.7%
+66,Willson Contreras,St. Louis Cardinals,1B,41.7%
+66,Bryce Harper,Philadelphia Phillies,1B,41.7%
+69,Kyle Manzardo,Cleveland Guardians,1B,41.5%
+70,William Contreras,Milwaukee Brewers,C,41.3%
+71,Jose Ramirez,Cleveland Guardians,3B,40.9%
+71,Jonathan Aranda,Tampa Bay Rays,1B,40.9%
+73,Eugenio Suárez,Arizona Diamondbacks,3B,40.8%
+74,Jake Meyers,Houston Astros,CF,40.5%
+74,Xavier Edwards,Miami Marlins,SS,40.5%
+76,Dylan Crews,Washington Nationals,RF,40.0%
+76,Randy Arozarena,Seattle Mariners,LF,40.0%
+76,Nolan Arenado,St. Louis Cardinals,3B,40.0%
+76,TJ Friedl,Cincinnati Reds,CF,40.0%
+76,Kyle Stowers,Miami Marlins,LF,40.0%
+81,Wilmer Flores,San Francisco Giants,1B,39.6%
+81,Josh Naylor,Arizona Diamondbacks,1B,39.6%
+81,Geraldo Perdomo,Arizona Diamondbacks,SS,39.6%
+81,Nick Castellanos,Philadelphia Phillies,RF,39.6%
+85,Shea Langeliers,Sacramento Athletics,C,39.5%
+85,Spencer Steer,Cincinnati Reds,LF,39.5%
+87,Michael Conforto,Los Angeles Dodgers,LF,39.1%
+87,Anthony Volpe,New York Yankees,SS,39.1%
+89,Jarren Duran,Boston Red Sox,CF,38.8%
+90,Cedric Mullins,Baltimore Orioles,CF,38.6%
+91,Hunter Goodman,Colorado Rockies,C,37.8%
+91,Junior Caminero,Tampa Bay Rays,3B,37.8%
+91,J.P. Crawford,Seattle Mariners,SS,37.8%
+91,Marcell Ozuna,Atlanta Braves,DH,37.8%
+91,Alec Bohm,Philadelphia Phillies,3B,37.8%
+91,Max Kepler,Philadelphia Phillies,RF,37.8%
+97,Austin Riley,Atlanta Braves,3B,37.5%
+97,Jeremy Pena,Houston Astros,SS,37.5%
+97,Gunnar Henderson,Baltimore Orioles,3B,37.5%
+97,Will Smith,Los Angeles Dodgers,C,37.5%

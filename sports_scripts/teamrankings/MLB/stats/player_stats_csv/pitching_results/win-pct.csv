@@ -1,0 +1,101 @@
+Rank,Player,Team,Pos,Value
+1,Robbie Ray,San Francisco Giants,P,1.000
+1,Andrew Abbott,Cincinnati Reds,P,1.000
+1,Max Fried,New York Yankees,P,1.000
+1,Tony Gonsolin,Los Angeles Dodgers,P,1.000
+1,Jesus Luzardo,Philadelphia Phillies,P,1.000
+1,Tyler Glasnow,Los Angeles Dodgers,P,1.000
+1,Colin Rea,Chicago Cubs,P,1.000
+1,Jackson Jobe,Detroit Tigers,P,1.000
+9,Casey Mize,Detroit Tigers,P,0.857
+10,Sonny Gray,St. Louis Cardinals,P,0.833
+10,Griffin Canning,New York Mets,P,0.833
+10,Bryan Woo,Seattle Mariners,P,0.833
+10,Tyler Mahle,Texas Rangers,P,0.833
+10,Zack Wheeler,Philadelphia Phillies,P,0.833
+15,Jose Quintana,Milwaukee Brewers,P,0.800
+15,Bailey Ober,Minnesota Twins,P,0.800
+15,Jacob deGrom,Texas Rangers,P,0.800
+15,Cristopher Sanchez,Philadelphia Phillies,P,0.800
+15,Walker Buehler,Boston Red Sox,P,0.800
+20,Hunter Brown,Houston Astros,P,0.750
+20,Justin Steele,Chicago Cubs,P,0.750
+20,Corbin Burnes,Arizona Diamondbacks,P,0.750
+20,Jake Irvin,Washington Nationals,P,0.750
+24,Nick Pivetta,San Diego Padres,P,0.714
+24,Kris Bubic,Kansas City Royals,P,0.714
+24,Brady Singer,Cincinnati Reds,P,0.714
+24,Merrill Kelly,Arizona Diamondbacks,P,0.714
+28,Brandon Pfaadt,Arizona Diamondbacks,P,0.700
+29,Tarik Skubal,Detroit Tigers,P,0.667
+29,Landon Knack,Los Angeles Dodgers,P,0.667
+29,Matthew Boyd,Chicago Cubs,P,0.667
+29,Michael King,San Diego Padres,P,0.667
+29,Logan Evans,Seattle Mariners,P,0.667
+29,Joe Ryan,Minnesota Twins,P,0.667
+29,Chris Bassitt,Toronto Blue Jays,P,0.667
+29,Andre Pallante,St. Louis Cardinals,P,0.667
+29,Hunter Greene,Cincinnati Reds,P,0.667
+29,Nathan Eovaldi,Texas Rangers,P,0.667
+29,Tyler Anderson,Los Angeles Angels,P,0.667
+29,Pablo Lopez,Minnesota Twins,P,0.667
+29,Hunter Dobbins,Boston Red Sox,P,0.667
+29,Brayan Bello,Boston Red Sox,P,0.667
+43,Freddy Peralta,Milwaukee Brewers,P,0.625
+43,Carlos Rodon,New York Yankees,P,0.625
+43,Logan Webb,San Francisco Giants,P,0.625
+43,Yoshinobu Yamamoto,Los Angeles Dodgers,P,0.625
+43,Jeffrey Springs,Sacramento Athletics,P,0.625
+43,Clay Holmes,New York Mets,P,0.625
+49,AJ Smith-Shawver,Atlanta Braves,P,0.600
+49,Will Warren,New York Yankees,P,0.600
+49,Shota Imanaga,Chicago Cubs,P,0.600
+49,Jack Leiter,Texas Rangers,P,0.600
+49,Zach Eflin,Baltimore Orioles,P,0.600
+49,Gavin Williams,Cleveland Guardians,P,0.600
+49,Ryan Gusto,Houston Astros,P,0.600
+49,Miles Mikolas,St. Louis Cardinals,P,0.600
+57,Tomoyuki Sugano,Baltimore Orioles,P,0.571
+57,Garrett Crochet,Boston Red Sox,P,0.571
+57,Reese Olson,Detroit Tigers,P,0.571
+57,Luis Castillo,Seattle Mariners,P,0.571
+57,JP Sears,Sacramento Athletics,P,0.571
+57,Kodai Senga,New York Mets,P,0.571
+57,Mitchell Parker,Washington Nationals,P,0.571
+64,Martin Perez,Chicago White Sox,P,0.500
+64,Matthew Liberatore,St. Louis Cardinals,P,0.500
+64,Jose Berrios,Toronto Blue Jays,P,0.500
+64,Shane Baz,Tampa Bay Rays,P,0.500
+64,Carlos Carrasco,New York Yankees,P,0.500
+64,Logan Allen,Cleveland Guardians,P,0.500
+64,Keider Montero,Detroit Tigers,P,0.500
+64,Clarke Schmidt,New York Yankees,P,0.500
+64,Tobias Myers,Milwaukee Brewers,P,0.500
+64,Spencer Schwellenbach,Atlanta Braves,P,0.500
+64,Simeon Woods-Richardson,Minnesota Twins,P,0.500
+64,Bailey Falter,Pittsburgh Pirates,P,0.500
+64,Easton Lucas,Toronto Blue Jays,P,0.500
+64,Randy Vasquez,San Diego Padres,P,0.500
+64,Ben Brown,Chicago Cubs,P,0.500
+64,Erick Fedde,St. Louis Cardinals,P,0.500
+64,Roki Sasaki,Los Angeles Dodgers,P,0.500
+64,Kyle Hart,San Diego Padres,P,0.500
+64,Nick Lodolo,Cincinnati Reds,P,0.500
+64,Jameson Taillon,Chicago Cubs,P,0.500
+64,Patrick Corbin,Texas Rangers,P,0.500
+64,David Peterson,New York Mets,P,0.500
+64,Lucas Giolito,Boston Red Sox,P,0.500
+64,Ben Lively,Cleveland Guardians,P,0.500
+64,Bryce Elder,Atlanta Braves,P,0.500
+64,Taj Bradley,Tampa Bay Rays,P,0.500
+64,Logan Gilbert,Seattle Mariners,P,0.500
+91,Jose Soriano,Los Angeles Angels,P,0.429
+91,Framber Valdez,Houston Astros,P,0.429
+91,Tylor Megill,New York Mets,P,0.429
+91,Cal Quantrill,Miami Marlins,P,0.429
+91,Tanner Bibee,Cleveland Guardians,P,0.429
+91,Michael Wacha,Kansas City Royals,P,0.429
+91,Kevin Gausman,Toronto Blue Jays,P,0.429
+91,Ronel Blanco,Houston Astros,P,0.429
+91,Seth Lugo,Kansas City Royals,P,0.429
+91,Max Meyer,Miami Marlins,P,0.429

@@ -1,0 +1,101 @@
+Rank,Player,Team,Pos,Value
+1,Aaron Judge,New York Yankees,CF,0.762
+2,Freddie Freeman,Los Angeles Dodgers,1B,0.671
+3,Shohei Ohtani,Los Angeles Dodgers,P,0.668
+4,Corbin Carroll,Arizona Diamondbacks,RF,0.597
+5,Kyle Schwarber,Philadelphia Phillies,LF,0.583
+6,CJ Abrams,Washington Nationals,SS,0.569
+7,Alex Bregman,Boston Red Sox,2B,0.565
+8,Pete Crow-Armstrong,Chicago Cubs,CF,0.565
+9,Kyle Stowers,Miami Marlins,LF,0.563
+10,Cal Raleigh,Seattle Mariners,C,0.559
+11,Fernando Tatis Jr.,San Diego Padres,RF,0.554
+12,Ben Rice,New York Yankees,1B,0.552
+13,Pete Alonso,New York Mets,1B,0.544
+14,James Wood,Washington Nationals,LF,0.538
+15,Riley Greene,Detroit Tigers,LF,0.535
+16,Seiya Suzuki,Chicago Cubs,RF,0.533
+17,Kyle Tucker,Chicago Cubs,RF,0.532
+18,Rafael Devers,Boston Red Sox,3B,0.524
+19,Byron Buxton,Minnesota Twins,CF,0.522
+20,Spencer Torkelson,Detroit Tigers,1B,0.521
+21,Jose Ramirez,Cleveland Guardians,3B,0.519
+22,Bobby Witt Jr.,Kansas City Royals,SS,0.518
+22,Kerry Carpenter,Detroit Tigers,RF,0.518
+24,Wilyer Abreu,Boston Red Sox,CF,0.515
+25,Will Smith,Los Angeles Dodgers,C,0.508
+26,Eugenio Suárez,Arizona Diamondbacks,3B,0.506
+27,Logan O'Hoppe,Los Angeles Angels,C,0.500
+27,Jonathan Aranda,Tampa Bay Rays,1B,0.500
+29,Geraldo Perdomo,Arizona Diamondbacks,SS,0.494
+30,Wyatt Langford,Texas Rangers,LF,0.493
+31,Kyle Manzardo,Cleveland Guardians,1B,0.493
+32,Ryan O'Hearn,Baltimore Orioles,1B,0.492
+33,Josh Jung,Texas Rangers,3B,0.486
+34,Heliot Ramos,San Francisco Giants,CF,0.486
+35,Paul Goldschmidt,New York Yankees,1B,0.486
+36,Maikel Garcia,Kansas City Royals,3B,0.483
+36,Rhys Hoskins,Milwaukee Brewers,1B,0.483
+38,Hunter Goodman,Colorado Rockies,C,0.483
+39,Andy Pages,Los Angeles Dodgers,CF,0.482
+40,Tyler Soderstrom,Sacramento Athletics,1B,0.482
+41,Jacob Wilson,Sacramento Athletics,SS,0.478
+42,Michael Busch,Chicago Cubs,1B,0.474
+43,Dansby Swanson,Chicago Cubs,SS,0.471
+44,Taylor Ward,Los Angeles Angels,LF,0.467
+45,Cedric Mullins,Baltimore Orioles,CF,0.466
+46,Brendan Donovan,St. Louis Cardinals,2B,0.465
+47,Gavin Sheets,San Diego Padres,RF,0.464
+48,Shea Langeliers,Sacramento Athletics,C,0.463
+49,Francisco Lindor,New York Mets,SS,0.461
+50,Marcell Ozuna,Atlanta Braves,DH,0.461
+51,Jung Hoo Lee,San Francisco Giants,CF,0.460
+52,Matt Olson,Atlanta Braves,1B,0.457
+53,Gunnar Henderson,Baltimore Orioles,3B,0.457
+54,Bryce Harper,Philadelphia Phillies,1B,0.456
+55,Cody Bellinger,New York Yankees,CF,0.453
+56,Austin Wells,New York Yankees,C,0.453
+57,George Springer,Toronto Blue Jays,RF,0.450
+58,Jackson Holliday,Baltimore Orioles,SS,0.449
+59,Isaac Paredes,Houston Astros,3B,0.448
+60,Wilmer Flores,San Francisco Giants,1B,0.447
+61,Manny Machado,San Diego Padres,3B,0.446
+62,Jeremy Pena,Houston Astros,SS,0.445
+63,Austin Riley,Atlanta Braves,3B,0.444
+64,Brent Rooker,Sacramento Athletics,LF,0.441
+65,Mike Yastrzemski,San Francisco Giants,RF,0.440
+66,Josh Naylor,Arizona Diamondbacks,1B,0.440
+67,Vladimir Guerrero Jr.,Toronto Blue Jays,1B,0.439
+68,Mookie Betts,Los Angeles Dodgers,SS,0.438
+69,Juan Soto,New York Mets,RF,0.437
+70,Jake Meyers,Houston Astros,CF,0.436
+71,Lourdes Gurriel Jr.,Arizona Diamondbacks,LF,0.435
+72,Gleyber Torres,Detroit Tigers,2B,0.435
+73,Steven Kwan,Cleveland Guardians,LF,0.428
+74,Zach McKinstry,Detroit Tigers,RF,0.428
+75,Bo Bichette,Toronto Blue Jays,SS,0.427
+76,Oneil Cruz,Pittsburgh Pirates,CF,0.426
+77,Anthony Volpe,New York Yankees,SS,0.424
+78,Josh H. Smith,Texas Rangers,3B,0.423
+79,Masyn Winn,St. Louis Cardinals,SS,0.422
+80,Jasson Dominguez,New York Yankees,LF,0.421
+81,Trevor Larnach,Minnesota Twins,LF,0.419
+82,Jackson Chourio,Milwaukee Brewers,LF,0.416
+83,Jarren Duran,Boston Red Sox,CF,0.415
+84,Luis Arraez,San Diego Padres,1B,0.414
+84,Lars Nootbaar,St. Louis Cardinals,RF,0.414
+86,Gavin Lux,Cincinnati Reds,LF,0.412
+87,Nick Castellanos,Philadelphia Phillies,RF,0.411
+88,Sal Frelick,Milwaukee Brewers,RF,0.410
+88,Elly De La Cruz,Cincinnati Reds,SS,0.410
+90,Miguel Vargas,Chicago White Sox,3B,0.407
+91,Trea Turner,Philadelphia Phillies,SS,0.405
+91,Julio Rodriguez,Seattle Mariners,CF,0.405
+93,Randy Arozarena,Seattle Mariners,LF,0.404
+94,Nolan Schanuel,Los Angeles Angels,1B,0.403
+95,Junior Caminero,Tampa Bay Rays,3B,0.402
+96,Brandon Nimmo,New York Mets,LF,0.401
+97,Yandy Diaz,Tampa Bay Rays,1B,0.400
+97,TJ Friedl,Cincinnati Reds,CF,0.400
+99,Willson Contreras,St. Louis Cardinals,1B,0.398
+100,Matt Chapman,San Francisco Giants,3B,0.398

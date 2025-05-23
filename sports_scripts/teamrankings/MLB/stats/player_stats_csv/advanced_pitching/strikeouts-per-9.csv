@@ -1,0 +1,81 @@
+Rank,Player,Team,Pos,Value
+1,MacKenzie Gore,Washington Nationals,P,13.4
+2,Tarik Skubal,Detroit Tigers,P,11.9
+3,Chris Sale,Atlanta Braves,P,11.9
+4,Will Warren,New York Yankees,P,11.6
+5,Zack Wheeler,Philadelphia Phillies,P,11.3
+6,Joe Ryan,Minnesota Twins,P,10.9
+7,Carlos Rodon,New York Yankees,P,10.9
+8,Cristopher Sanchez,Philadelphia Phillies,P,10.8
+9,Dylan Cease,San Diego Padres,P,10.7
+10,Hunter Brown,Houston Astros,P,10.6
+11,Yoshinobu Yamamoto,Los Angeles Dodgers,P,10.6
+12,Max Meyer,Miami Marlins,P,10.5
+13,Garrett Crochet,Boston Red Sox,P,10.4
+14,Luis Ortiz,Cleveland Guardians,P,10.4
+15,Michael King,San Diego Padres,P,10.3
+16,Jesus Luzardo,Philadelphia Phillies,P,10.1
+17,Nick Pivetta,San Diego Padres,P,10.0
+18,Logan Webb,San Francisco Giants,P,9.8
+19,Sonny Gray,St. Louis Cardinals,P,9.8
+20,Robbie Ray,San Francisco Giants,P,9.7
+21,Chris Bassitt,Toronto Blue Jays,P,9.6
+22,Nathan Eovaldi,Texas Rangers,P,9.5
+23,Zac Gallen,Arizona Diamondbacks,P,9.5
+24,Aaron Nola,Philadelphia Phillies,P,9.4
+25,Jacob deGrom,Texas Rangers,P,9.4
+26,Matthew Boyd,Chicago Cubs,P,9.3
+27,Freddy Peralta,Milwaukee Brewers,P,9.2
+28,Kris Bubic,Kansas City Royals,P,9.0
+29,Ronel Blanco,Houston Astros,P,8.9
+30,Paul Skenes,Pittsburgh Pirates,P,8.9
+31,Shane Baz,Tampa Bay Rays,P,8.8
+32,Clay Holmes,New York Mets,P,8.7
+33,Max Fried,New York Yankees,P,8.6
+34,Bryan Woo,Seattle Mariners,P,8.6
+35,Grant Holmes,Atlanta Braves,P,8.5
+36,Framber Valdez,Houston Astros,P,8.4
+37,David Peterson,New York Mets,P,8.4
+37,Kodai Senga,New York Mets,P,8.4
+39,Yusei Kikuchi,Los Angeles Angels,P,8.3
+40,Jose Berrios,Toronto Blue Jays,P,8.2
+41,Kevin Gausman,Toronto Blue Jays,P,8.1
+42,Matthew Liberatore,St. Louis Cardinals,P,8.1
+43,Merrill Kelly,Arizona Diamondbacks,P,8.1
+44,Michael Lorenzen,Kansas City Royals,P,7.8
+45,Tyler Anderson,Los Angeles Angels,P,7.7
+46,Nick Lodolo,Cincinnati Reds,P,7.5
+47,Ryan Pepiot,Tampa Bay Rays,P,7.5
+48,Bailey Ober,Minnesota Twins,P,7.4
+48,Mitch Keller,Pittsburgh Pirates,P,7.4
+50,Kyle Freeland,Colorado Rockies,P,7.3
+50,Taj Bradley,Tampa Bay Rays,P,7.3
+52,Spencer Schwellenbach,Atlanta Braves,P,7.2
+53,Jose Soriano,Los Angeles Angels,P,7.1
+54,Justin Verlander,San Francisco Giants,P,7.1
+55,Luis Castillo,Seattle Mariners,P,7.0
+56,Jameson Taillon,Chicago Cubs,P,7.0
+56,Brandon Pfaadt,Arizona Diamondbacks,P,7.0
+58,JP Sears,Sacramento Athletics,P,7.0
+59,Jeffrey Springs,Sacramento Athletics,P,7.0
+60,Jonathan Cannon,Chicago White Sox,P,6.9
+61,Michael Wacha,Kansas City Royals,P,6.8
+62,Luis Severino,Sacramento Athletics,P,6.8
+63,Andrew Heaney,Pittsburgh Pirates,P,6.8
+64,Nick Martinez,Cincinnati Reds,P,6.7
+65,Seth Lugo,Kansas City Royals,P,6.7
+66,Tyler Mahle,Texas Rangers,P,6.5
+67,Bailey Falter,Pittsburgh Pirates,P,6.5
+68,Dean Kremer,Baltimore Orioles,P,6.5
+69,Chris Paddack,Minnesota Twins,P,6.4
+70,Tanner Bibee,Cleveland Guardians,P,6.2
+71,Jake Irvin,Washington Nationals,P,6.0
+72,Mitchell Parker,Washington Nationals,P,5.9
+73,Zack Littell,Tampa Bay Rays,P,5.8
+74,Andre Pallante,St. Louis Cardinals,P,5.7
+75,Davis Martin,Chicago White Sox,P,5.7
+76,Erick Fedde,St. Louis Cardinals,P,5.3
+77,Kyle Hendricks,Los Angeles Angels,P,5.3
+78,Jack Kochanowicz,Los Angeles Angels,P,5.3
+79,Tomoyuki Sugano,Baltimore Orioles,P,5.0
+80,Antonio Senzatela,Colorado Rockies,P,4.5
